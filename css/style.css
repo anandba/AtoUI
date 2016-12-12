@@ -196,7 +196,19 @@ ul.dropdown {
 .width-auto {
     width: auto;
 }
+input[type="text"],
+select {
+    border: 1px solid #aaa;
+}
+.img-center {
+    margin: 0 auto;
+}
+.overflowh {
+    overflow: hidden;
+}
+.empty-cell {padding: 0 8px;}
 /*margin classes*/
+
 .margin-0 {
     margin: 0;
 }
@@ -329,6 +341,11 @@ ul.dropdown {
     padding: 2px 12px;
     border-color: #528B8B;
 }
+.page-subheader {
+    padding: 5px;
+    background: rgb(221, 221, 221);
+    margin-bottom: 2px;
+}
 .form-horizontal .control-label {
     text-align: right;
     color: #000;
@@ -363,17 +380,6 @@ ul.dropdown {
     font-size: 13px;
     margin-bottom: 10px;
     padding: 5px;
-}
-/*.radio label,
-.checkbox label,
-label {
-    font-size: 0.85em;
-    font-weight: 300;
-    vertical-align: middle;
-}*/
-
-select[multiple] {
-    padding: 7px 9px;
 }
 .btn-group,
 .btn-group-vertical {
@@ -434,7 +440,7 @@ div.button span {
 }
 .table > thead > tr > th {
     border-bottom: 1px solid #a5a5a5;
-    background: #B0E0E6;
+    background: #B0E0E6; /*applied to datepicker*/
 }
 .table td a,
 .table th a {
@@ -479,53 +485,6 @@ div.button span {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/*.checkbox {
-    position: relative;
-    top: -3px;
-    margin: 0 1rem 0 0;
-    cursor: pointer;
-}
-.checkbox:before {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    content: "";
-    position: absolute;
-    left: 0;
-    z-index: 1;
-    width: 19px;
-    height: 19px;
-    border: 1px solid #CDCDCD;
-}
-.checkbox:after {
-    content: "";
-    position: absolute;
-    top: -0.125rem;
-    left: 0;
-    width: 1.1rem;
-    height: 1.1rem;
-    background: #fff;
-    cursor: pointer;
-}
-.checkbox:checked:before {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    height: .5rem;
-    border-color: #F44336;
-    border-top-style: none;
-    border-right-style: none;
-}
-.selector 
-.checkbox input[type=checkbox]:not(*:root),
-.checkbox-inline input[type=checkbox]:not(*:root),
-.radio input[type=radio]:not(*:root),
-.radio-inline input[type=radio]:not(*:root) {
-    margin-top: 5px;
-}*/
-
 input[type="checkbox"],
 input[type="radio"] {
     margin: 5px 0 0;
@@ -533,11 +492,18 @@ input[type="radio"] {
     line-height: normal;
 }
 .login-bg {
-    width: 100%;
+    /*width: 100%;
     background-image: url(../images/erp_0.jpg);
     background-size: cover;
     height: auto;
     min-height: 100%;
+	*/
+	background-image: url(../images/erp.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 535px;
 }
 .jumbotron p {
     float: left;
@@ -589,14 +555,6 @@ input[type="radio"] {
 .form-signin .password-label {
     margin: 4px 0;
 }
-/*.form-signin .checkbox,
-.form-signin .radio {
-    margin: 10px 20px;
-}
-.form-signin .checkbox {
-    font-weight: normal;
-}*/
-
 .form-signin .form-control,
 .form-signin .form-control:focus {
     position: relative;
@@ -896,30 +854,14 @@ a.thumbnail-name:hover {
     background: rgba(221, 221, 221, 0.4) !important;
 }
 /*Backcolor CSS ENDS*/
-/* 
-.list-group-horizontal .list-group-item {
-    display: inline-block;
-    margin-bottom: 0;
-    margin-left: -4px;
-    margin-right: 0;
-    width: 20%;
-    padding: 5px;
-    font-size: 13px;
-    font-weight: bold;
-    background-color: #CDCDCD;
-    border-color: #E8E8E8;
-}
-.list-group-horizontal .list-group-item.active {
-    background-color: #919191;
-    border-color: #919191;
-    color: #333;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25) inset;
-}
-.list-group-horizontal .list-group-item:first-child,
-.list-group-horizontal .list-group-item:last-child{
-    border-radius: 0;
-} */
 
+.activity-box {
+    min-height: 250px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    margin-top: 10px;
+}
 .horizontal-list-tbl {
     width: 100%;
     margin-bottom: 10px;
@@ -953,7 +895,6 @@ a.thumbnail-name:hover {
 .info-tbl > tbody > tr > th,
 .year-tbl > thead > tr > th,
 .year-tbl > tbody > tr:nth-child(even),
-.currency-tbl > thead > tr > th:first-child,
 .country-tbl > tbody > tr > td:nth-child(odd) {
     background: rgb(221, 221, 221);
 }
@@ -994,24 +935,23 @@ a.thumbnail-name:hover {
 .bluewhite > thead > tr > th {
     border: 1px solid #0099CC;
 }
-input[type="text"],
-select {
-    border: 1px solid #aaa;
+.row-operator.fa-minus,
+.row-operator.fa-plus {
+    cursor: pointer;
+    background: rgb(222, 235, 247);
+    border-radius: 5px;
+    padding: 5px
 }
 .table select,
 .table input[type="text"] {
     width: 100%
-}
-.currency-tbl > tbody > tr > td:not(:last-child),
-.currency-tbl > thead > tr > th:not(:first-child):not(:last-child) {
-    border-right-color: white;
 }
 .setting-tbl > tbody > tr > td:nth-child(5),
 .blue-tbl > tbody > tr > td.tbl-valign {
     background-color: white;
     vertical-align: middle;
 }
-.year-tbl-wrapper {
+/*.year-tbl-wrapper {
     padding-right: 0px;
     padding-left: 80px;
 }
@@ -1021,7 +961,7 @@ select {
 .setting-st table tr td,
 .setting-st table tr th {
     vertical-align: middle;
-}
+}*/
 .select-tbl > thead > tr > th,
 .select-tbl > tbody > tr > th,
 .select-tbl > thead > tr > td,
@@ -1041,10 +981,10 @@ select {
     height: 400px;
     border: 1px solid #a5a5a5;
 }
-.height400:first-child {
+/*.height400:first-child {
     height: 400px;
     border-right: 1px solid #fff;
-}
+}*/
 .min-height775 {
     min-height: 775px !important;
 }
@@ -1134,22 +1074,7 @@ select {
 .datepicker .table> thead:first-child > tr:first-child > th {
     border: 0;
 }
-.date .datepicker {border-radius: 0}
+.date .datepicker {
+    border-radius: 0
+}
 /*date picker CSS ENDS*/
-
-.overflowh {
-    overflow: hidden;
-}
-.activity-box {
-    min-height: 250px;
-    padding: 3px;
-    border: 1px solid #ccc;
-    font-size: 12px;
-    margin-top: 10px
-}
-.img-center {
-    margin: 0 auto;
-}
-
-.row-operator.fa-minus ,.row-operator.fa-plus{ cursor: pointer;background: rgb(222, 235, 247); border-radius: 5px; padding: 5px}
-.page-subheader { padding: 5px; background: rgb(221, 221, 221);margin-bottom: 2px;}

@@ -165,10 +165,10 @@
                         <table class="table info-tbl">
                            <tbody>
                               <tr>
-                                 <th class="darkpurple-thead" colspan="4">Company Data</th>
+                                 <th colspan="4">Company Data</th>
                               </tr>
                               <tr>
-                                 <td colspan="4" class="bold-font">Hitachi Systems Limited</td>
+                                 <th colspan="4" class="gray-backcolor-light">Hitachi Systems Limited</t>
                               </tr>
                               <tr>
                                  <td class="col-md-2">Website</td>
@@ -206,16 +206,16 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="table-responsive">
-                        <table class="table  blue-tbl">
+                        <table class="table info-tbl">
                            <thead>
                               <tr>
-                                 <th class="col-md-8 darkblue-thead" colspan="4">Contact Person</th>
-                                 <th class="col-md-4 darkblue-thead text-right">&lt;Sales In Charge&gt;</th>
+                                 <th class="col-md-8 " colspan="4">Contact Person</th>
+                                 <th class="col-md-4  text-right">&lt;Sales In Charge&gt;</th>
                               </tr>
                            </thead>
                            <tr>
-                              <td colspan="4" class="blue-thead">&nbsp;</td>
-                              <td rowspan="6" class="tbl-valign text-center">V Card</td>
+                              <td colspan="4" ><input type="text" placeholder="Person Name"/></td>
+                              <td rowspan="6" class="text-center">&lt;V Card&gt;</td>
                            </tr>
                            <tr>
                               <td  colspan="4"><input type="text" placeholder="Department Name"/></td>
@@ -224,17 +224,17 @@
                               <td  colspan="4"><input type="text" placeholder="Div Name"/></td>
                            </tr>
                            <tr>
-                              <td>TEL</td>
+                              <td class="gray-backcolor">TEL</td>
                               <td>000-000-0000</td>
-                              <td class="text-right">Mobile</td>
+                              <td class="gray-backcolor">Mobile</td>
                               <td>000-000-000</td>
                            </tr>
                            <tr>
-                              <td>Email</td>
+                              <td class="gray-backcolor">Email</td>
                               <td colspan="3"><input type="text"/></td>
                            </tr>
                            <tr>
-                              <td>Reference</td>
+                              <td class="gray-backcolor">Reference</td>
                               <td  colspan="3">
                                  <select>
                                     <option value="1">ABC1</option>
@@ -262,23 +262,17 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="table-responsive">
-                        <table class="table blue-tbl">
+                        <table class="table info-tbl">
+						<thead>
                            <tr>
-                              <th colspan="7" class="darkblue-thead">Activities Status</th>
+                              <th colspan="4" class="">Activities Status</th>
                            </tr>
-                        </table>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="table-responsive">
-                        <table class="table blue-tbl">
+						</thead>
                            <tr>
-                              <td class="col-md-3"><i class="fa fa-envelope padding-r-5 " aria-hidden="true"></i>1 Times</td>
-                              <td class="col-md-3 blue-thead"><i class="fa fa-phone padding-r-5 " aria-hidden="true"></i>0 Times</td>
-                              <td class="col-md-3"><i class="fa fa-home padding-r-5 " aria-hidden="true"></i>0 Times</td>
-                              <td class="col-md-3 blue-thead"><i class="fa fa-sign-out padding-r-5 " aria-hidden="true"></i>0 Times</td>
+                              <td class="col-md-3"><i class="fa fa-envelope padding-r-5 "></i>1 Times</td>
+                              <td class="col-md-3 gray-backcolor"><i class="fa fa-phone padding-r-5 "></i>0 Times</td>
+                              <td class="col-md-3"><i class="fa fa-home padding-r-5 "></i>0 Times</td>
+                              <td class="col-md-3 gray-backcolor"><i class="fa fa-sign-out padding-r-5 "></i>0 Times</td>
                            </tr>
                         </table>
                      </div>
@@ -289,7 +283,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="table-responsive">
-                        <table class="table  blue-tbl">
+                        <table class="table info-tbl">
                            <thead>
                               <tr>
                                  <th class="col-md-1 text-center">Activity ID</th>
@@ -302,8 +296,7 @@
                            </thead>
                            <tbody>
                               <tr>
-                                 <td><a data-toggle="collapse" data-parent="#accordion" href="#activityDetailsSection" class="collapsed">
-                                    <i class="fa fa-caret-square-o-down caret-icon" aria-hidden="true"></i>1655432</a>
+                                 <td>1655432
                                  </td>
                                  <td><input type="text"/></td>
                                  <td><input type="text"/></td>
@@ -313,8 +306,8 @@
                                  <td><input type="text"/></td>
                               </tr>
                               <tr class="gray-backcolor-light">
-                                 <td rowspan="2"><a data-toggle="collapse" data-parent="#accordion" href="#activityDetailsSection" class="collapsed">
-                                    <i class="fa fa-caret-square-o-up caret-icon" aria-hidden="true"></i>1655433</a>
+                                 <td rowspan=""><a data-toggle="collapse" data-parent="#accordion" href="#detailsSection" class="collapsed">
+                                    <i class="fa fa-caret-square-o-up caret-icon"></i>1655433</a>
                                  </td>
                                  <td><input type="text"/></td>
                                  <td><input type="text"/></td>
@@ -323,7 +316,8 @@
                                  <td><input type="text"/></td>
                                  <td><input type="text"/></td>
                               </tr>
-                              <tr class="gray-backcolor-light">
+                              <tr id="detailsSection" class="collapse">
+								 <td></td>
                                  <td><input type="text"/></td>
                                  <td><input type="text"/></td>
                                  <td><input type="text"/></td>

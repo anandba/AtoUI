@@ -16,6 +16,10 @@
       <!---//webfonts--->  
       <!-- Bootstrap Core JavaScript -->
       <script src="js/bootstrap.min.js"></script>
+	   <!-- bootstrap datepicker -->
+      <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+      <!-- bootstrap datepicker -->
+      <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
    </head>
    <body>
       <div id="wrapper">
@@ -96,7 +100,7 @@
                   <div class="page-subheader">Admin Profile</div>
                </div>
                </div>
-            <div class="row padding-l-15">
+            <div class="row">
                <div class="col-md-12">
                   <div class="table-responsive">
                      <table class="table setting-tbl">
@@ -106,7 +110,7 @@
                               <td class="col-md-2">Yasuo Kikochi</td>
                               <td class="col-md-2">Emp Number</td>
                               <td class="col-md-2">1002</td>
-                              <td class="col-md-2" rowspan="4">Image</td>
+                              <td class="col-md-2 text-center" rowspan="4">&lt;Image&gt;</td>
                            </tr>
                            <tr>
                               <td class="col-md-2">User ID</td>
@@ -172,7 +176,7 @@
                            </tr>
                            <tr>
                               <td>
-                                 <a data-toggle="collapse" data-parent="#accordion" href="#yasuoDetailsSection" class="collapsed"><i class="fa fa-caret-square-o-up caret-icon" aria-hidden="true"></i>Yasuo Kikochi</a>
+                                 <a data-toggle="collapse" data-parent="#accordion" href="#yasuoDetailsSection" class="collapsed"><i class="fa fa-caret-square-o-up caret-icon"></i>Yasuo Kikochi</a>
                               </td>
                               <td>20%</td>
                               <td>20%</td>
@@ -196,7 +200,7 @@
                                  <td class="col-md-2">Yasuo Kikochi</td>
                                  <td class="col-md-2">Emp Number</td>
                                  <td class="col-md-2">1002</td>
-                                 <td class="col-md-2" rowspan="4">Image</td>
+                                 <td class="col-md-2 text-center" rowspan="4">&lt;Image&gt;</td>
                               </tr>
                               <tr>
                                  <td class="col-md-2">User ID</td>
@@ -250,7 +254,7 @@
                            </thead>
                            <tbody>
                               <tr>
-                                 <th scope="row" >Japan</th>
+                                 <th>Japan</th>
                                  <td>20%</td>
                                  <td>20%</td>
                                  <td>20%</td>
@@ -259,7 +263,7 @@
                                  <td>20%</td>
                               </tr>
                               <tr>
-                                 <th scope="row"></th>
+                                 <th></th>
                                  <td>20%</td>
                                  <td>20%</td>
                                  <td>20%</td>
@@ -295,7 +299,7 @@
                            </thead>
                            <tbody>
                               <tr>
-                                 <th scope="row">Target</th>
+                                 <th>Target</th>
                                  <td>20%</td>
                                  <td>20%</td>
                                  <td>20%</td>
@@ -310,7 +314,7 @@
                                  <td>20%</td>
                               </tr>
                               <tr>
-                                 <th scope="row">Archiv</th>
+                                 <th>Archiv</th>
                                  <td>20%</td>
                                  <td>20%</td>
                                  <td>20%</td>
@@ -336,7 +340,7 @@
                         <table class="table info-tbl">
                            <tbody>
                               <tr>
-                                 <th scope="row" class="col-md-1">India</th>
+                                 <th class="col-md-1">India</th>
                                  <td class="col-md-1">20%</td>
                                  <td class="col-md-3">20%</td>
                                  <td class="col-md-1">20%</td>
@@ -345,7 +349,7 @@
                                  <td class="col-md-2">20%</td>
                               </tr>
                               <tr>
-                                 <th scope="row"></th>
+                                 <th></th>
                                  <td>20%</td>
                                  <td>20%</td>
                                  <td>20%</td>
@@ -386,7 +390,7 @@
                            </thead>
                            <tbody>
                               <tr>
-                                 <th scope="row" >Target</th>
+                                 <th>Target</th>
                                  <td></td>
                                  <td></td>
                                  <td></td>
@@ -401,7 +405,7 @@
                                  <td></td>
                               </tr>
                               <tr>
-                                 <th scope="row">Archive</th>
+                                 <th>Archive</th>
                                  <td></td>
                                  <td></td>
                                  <td></td>
@@ -422,12 +426,13 @@
                </div>
             </div>
             <!--Add new sales person section-->
-            <div class="row">
-               <div class="col-md-12">
-                  <button type="button" class="btn btn-primary btn-responsive pull-left">Add New Sales Person</button>
+			<div class="margin-t-10"></div>
+			<div class="row">
+			   <div class="col-md-12">
+                  <div class="page-subheader">Add New Sales Person</div>
                </div>
             </div>
-            <div class="row padding-l-15">
+            <div class="row">
                <div class="col-md-12">
                   <div class="table-responsive">
                      <table class="table setting-tbl">
@@ -437,7 +442,7 @@
                               <td class="col-md-2"><input type="text"/></td>
                               <td class="col-md-2">Emp Number</td>
                               <td class="col-md-2"><input type="text"/></td>
-                              <td class="col-md-2" rowspan="4">Image</td>
+                              <td class="col-md-2 text-center" rowspan="4">&lt;Image&gt;</td>
                            </tr>
                            <tr>
                               <td class="col-md-2">User ID</td>
@@ -449,30 +454,45 @@
                               <td class="col-md-2">Password</td>
                               <td class="col-md-2"><input type="text"/></td>
                               <td class="col-md-2">Date of Birth (age)</td>
-                              <td class="col-md-2"><input type="text"/></td>
+                              <td class="col-md-2">
+							   <div class="input-group date">
+                                    <div class="input-group-addon">
+                                       <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" class="datepicker">
+                               </div>
+							  </td>
                            </tr>
                            <tr>
                               <td class="col-md-2">Email</td>
                               <td class="col-md-2"><input type="text"/></td>
                               <td class="col-md-2">Date of Joining</td>
-                              <td class="col-md-2"><input type="text"/></td>
+                              <td class="col-md-2">
+							   <div class="input-group date">
+                                    <div class="input-group-addon">
+                                       <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" class="datepicker">
+                               </div>
+							  </td>
                            </tr>
                         </tbody>
                      </table>
                   </div>
                </div>
             </div>
-            <div class="row padding-l-15">
+            <div class="row">
                <div class="col-md-12">
                   <button type="button" class="btn btn-primary btn-responsive pull-right">Upload Image</button>
                </div>
             </div>
-			<div class="row padding-l-15">
+			<div class="margin-t-10"></div>
+			<div class="row">
 			<div class="col-md-12">
 			<div class="page-subheader">Targets</div>
 			</div>
 			</div>
-            <div class="row padding-l-15">
+            <div class="row">
                <div class="col-md-12">
                   <div class="table-responsive">
                      <table class="table info-tbl">
@@ -502,10 +522,10 @@
                   </div>
                </div>
             </div>
-            <div class="row padding-l-15">
+            <div class="row">
                <div class="col-md-12">
                   <div class="table-responsive year-tbl-wrapper">
-                     <table class="table year-tbl table-striped">
+                     <table class="table info-tbl table-striped">
                         <thead>
                            <tr>
                               <th>2016-17</th>
@@ -525,7 +545,7 @@
                         </thead>
                         <tbody>
                            <tr>
-                              <th scope="row" >Target</th>
+                              <th>Target</th>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -540,7 +560,7 @@
                               <td></td>
                            </tr>
                            <tr>
-                              <th scope="row" >Archive</th>
+                              <th>Archive</th>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -559,7 +579,7 @@
                   </div>
                </div>
             </div>
-            <div class="row padding-l-15">
+            <div class="row">
                <div class="col-md-12">
                   <div class="table-responsive">
                      <table class="table info-tbl">
@@ -589,7 +609,7 @@
                   </div>
                </div>
             </div>
-            <div class="row padding-l-15">
+            <div class="row">
                <div class="col-md-12">
                   <div class="table-responsive year-tbl-wrapper">
                      <table class="table year-tbl table-striped">
@@ -612,7 +632,7 @@
                         </thead>
                         <tbody>
                            <tr>
-                              <th scope="row" >Target</th>
+                              <th>Target</th>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -627,7 +647,7 @@
                               <td></td>
                            </tr>
                            <tr>
-                              <th scope="row" >Archive</th>
+                              <th>Archive</th>
                               <td></td>
                               <td></td>
                               <td></td>
@@ -646,7 +666,7 @@
                   </div>
                </div>
             </div>
-            <div class="row padding-l-15">
+            <div class="row">
                <div class="col-md-12">
                   <button type="button" class="btn btn-primary btn-responsive pull-right">Cancel</button>
                   <button type="button" class="btn btn-primary btn-responsive pull-right">Save</button>
@@ -654,13 +674,14 @@
                   <button type="button" class="btn btn-primary btn-responsive pull-right">Add New</button>
                </div>
             </div>
-            <div class="row padding-l-15">
+			<div class="margin-t-10"></div>
+            <div class="row">
                <div class="col-md-12">
                   <div class="table-responsive">
                      <table class="table info-tbl">
                         <tbody>
                            <tr>
-                              <th scope="row"  class="col-md-1">Total</th>
+                              <th class="col-md-1">Total</th>
                               <td class="col-md-1"></td>
                               <td class="col-md-3"></td>
                               <td class="col-md-1"></td>

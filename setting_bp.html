@@ -2,7 +2,7 @@
 <html>
    <head>
       <title>Indo-Sakura EnterpriseConnect</title>
-      <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <!-- Bootstrap Core CSS -->
       <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
@@ -92,7 +92,7 @@
                   <div class="page-subheader">Add New Bank</div>
                </div>
                </div>
-               <div class="row padding-l-15">
+               <div class="row">
                   <div class="col-md-12">
                      <div class="table-responsive">
                         <table class="table setting-tbl">
@@ -119,7 +119,7 @@
                                  <td class="col-md-2">Account Name</td>
                                  <td class="col-md-10" colspan="3">
                                     <input type="text"/>
-                                    <p class="help-block"><i class="fa fa-info-circle" aria-hidden="true"></i>Please enter Account Name</p>
+                                    <p class="help-block"><i class="fa fa-info-circle"></i>Please enter Account Name</p>
                                  </td>
                               </tr>
                               <tr>
@@ -176,7 +176,7 @@
                               </tr>
                               <tr>
                                  <td><a data-toggle="collapse" data-parent="#accordion" href="#bankDetailsSection" class="collapsed">
-                                    <i class="fa fa-caret-square-o-up caret-icon" aria-hidden="true"></i>BOA</a>
+                                    <i class="fa fa-caret-square-o-up caret-icon"></i>BOA</a>
                                  </td>
                                  <td>New York</td>
                                  <td>Credit</td>
@@ -238,36 +238,36 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="table-responsive">
-                        <table class="table info-tbl">
+                        <table class="table info-tbl" id="currency-tbl">
                            <thead>
                               <tr>
                                  <th class="col-md-3 text-center">Currency Exchange Rate</th>
-                                 <td class="col-md-3 text-center">USD</td>
-                                 <td class="col-md-3 text-center">JPY</td>
-                                 <td class="col-md-3 text-center">INR</td>
+                                 <th class="col-md-3 text-center">USD</th>
+                                 <th class="col-md-3 text-center">JPY</th>
+                                 <th class="col-md-3 text-center">INR</th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td class="text-right">2015-16</td>
+                                 <td class="text-right"><i class="fa fa-minus row-operator pull-left"></i>2012-13</td>
                                  <td class="text-center">1.000</td>
                                  <td class="text-center">103.23</td>
                                  <td class="text-center">55.23</td>
                               </tr>
                               <tr>
-                                 <td class="text-right">2015-16</td>
+                                 <td class="text-right"><i class="fa fa-minus row-operator pull-left"></i>2013-14</td>
                                  <td class="text-center">1.000</td>
                                  <td class="text-center">102.1</td>
                                  <td class="text-center">66.15</td>
                               </tr>
                               <tr>
-                                 <td class="text-right">2015-16</td>
+                                 <td class="text-right"><i class="fa fa-minus row-operator pull-left"></i>2014-15</td>
                                  <td class="text-center">1.000</td>
                                  <td class="text-center">102.1</td>
                                  <td class="text-center">66.15</td>
                               </tr>
                               <tr>
-                                 <td class="text-right">2015-16</td>
+                                 <td class="text-right"><i class="fa fa-minus row-operator pull-left"></i>2016-17</td>
                                  <td class="text-center">1.000</td>
                                  <td class="text-center">102.1</td>
                                  <td class="text-center">66.15</td>
@@ -279,7 +279,7 @@
                </div>
                <div class="row">
                   <div class="col-md-12">
-                     <i class="fa fa-plus pull-left row-operator" aria-hidden="true"></i>
+                     <i class="fa fa-plus pull-left row-operator currency-plus" style="margin: 4px"></i>
                      <button type="button" class="btn btn-primary btn-responsive pull-right">Cancel</button>
                      <button type="button" class="btn btn-primary btn-responsive pull-right">Save</button>
                      <button type="button" class="btn btn-primary btn-responsive pull-right">Edit</button>

@@ -30,38 +30,37 @@ $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
 $('#resourceDetailsSection').on('shown.bs.collapse', function () {
 $(".caret-icon").removeClass("fa-caret-square-o-up").addClass("fa-caret-square-o-down");
 });
-
 $('#resourceDetailsSection').on('hidden.bs.collapse', function () {
 $(".caret-icon").removeClass("fa-caret-square-o-down").addClass("fa-caret-square-o-up");
 });
 $('#clientDetailsSection').on('shown.bs.collapse', function () {
 $(".caret-icon").removeClass("fa-caret-square-o-up").addClass("fa-caret-square-o-down");
 });
-
 $('#clientDetailsSection').on('hidden.bs.collapse', function () {
 $(".caret-icon").removeClass("fa-caret-square-o-down").addClass("fa-caret-square-o-up");
 });
-
 $('#countryDetailsSection').on('shown.bs.collapse', function () {
 $(".caret-icon").removeClass("fa-caret-square-o-up").addClass("fa-caret-square-o-down");
 });
-
 $('#countryDetailsSection').on('hidden.bs.collapse', function () {
 $(".caret-icon").removeClass("fa-caret-square-o-down").addClass("fa-caret-square-o-up");
 });
-
 $('#bankDetailsSection').on('shown.bs.collapse', function () {
 $(".caret-icon").removeClass("fa-caret-square-o-up").addClass("fa-caret-square-o-down");
 });
-
 $('#bankDetailsSection').on('hidden.bs.collapse', function () {
 $(".caret-icon").removeClass("fa-caret-square-o-down").addClass("fa-caret-square-o-up");
 });
 $('#yasuoDetailsSection').on('shown.bs.collapse', function () {
 $(".caret-icon").removeClass("fa-caret-square-o-up").addClass("fa-caret-square-o-down");
 });
-
 $('#yasuoDetailsSection').on('hidden.bs.collapse', function () {
+$(".caret-icon").removeClass("fa-caret-square-o-down").addClass("fa-caret-square-o-up");
+});
+$('#detailsSection').on('shown.bs.collapse', function () {
+$(".caret-icon").removeClass("fa-caret-square-o-up").addClass("fa-caret-square-o-down");
+});
+$('#detailsSection').on('hidden.bs.collapse', function () {
 $(".caret-icon").removeClass("fa-caret-square-o-down").addClass("fa-caret-square-o-up");
 });
 /*SHOW/HIDE sections code ENDS*/
@@ -78,10 +77,14 @@ autoclose: true
 });
 });
 
-/*table row delete*/
-
+/*table row delete - generic*/
 $(".table").on('click','.fa-minus',function(){
-	$(this).closest('tr').remove();
+$(this).closest('tr').remove();
+});
+/*table row add - settings_bp.html currency tbl*/
+$(".fa-plus.currency-plus").click(function(){
+var markup = '<tr><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td><td><input type="text"/></td></tr>';
+$("#currency-tbl tbody").append(markup);
 });
 
 
