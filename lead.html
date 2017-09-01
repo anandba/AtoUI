@@ -1,0 +1,899 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>SalesConnect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/hover-min.css">
+        <link rel="stylesheet" href="css/bootstrap-select.min.css" >
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/common_custom_siva.css">
+
+        <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script  type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+        <script  type="text/javascript" src="js/owl.carousel.js"></script>
+        <script  type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+
+
+        <!-- Resources -->
+        <script type="text/javascript" src="js/canvasjs.min.js"></script>
+        <script type="text/javascript" src="js/amcharts.js"></script>
+        <script  type="text/javascript" src="js/serial.js"></script>
+        <script type="text/javascript" src="js/light.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </head>
+    <body>
+        <!-- Main navbar -->
+        <div class="navbar navbar-inverse relative">
+            <div class="navbar-header"> <a class="navbar-brand" href="index.html">SalesConnect</a> <a class="navbar-toggles navbar-brand" href="javascript:;"><img src="images/toggle.png" alt="toggle image"/></a>
+
+
+                <ul class="breadcrumb-custom">
+                    <li><a href="#"> Leads<i class="icon-entypo-chevron-right"></i></a></li>
+                    <li role="presentation" class="dropdown active"> <a type="button" class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dashboard <i class="icon-entypo-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Create Leads</a></li>
+                            <li><a href="list.html">List</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a class="lgout" href="#"><img src="images/logout.png"/></a>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav">
+                    <li> <a class="sidebar-control sidebar-main-toggle hidden-xs"> <i class="icon-paragraph-justify3"></i> </a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /main navbar -->
+        <!-- Page container -->
+        <div class="page-container">
+
+            <!-- Page content -->
+            <div class="page-content">
+                <!-- Main sidebar -->
+                <div class="sidebar sidebar-main">
+                    <div class="sidebar-content">
+                        <!-- Main navigation -->
+                        <div class="sidebar-category sidebar-category-visible">
+                            <div class="category-content no-padding">
+                                <ul class="navigation navigation-main navigation-accordion">
+                                    <li class="sidebar-user"> <a href="#"> <img src="images/admin.jpg" class="img-circle" alt="admin image"> <span> Admin</span></a> </li>
+                                    <li> <a href="home.html"> <img src="images/home.png" alt="home imag/"> <span>Home</span> </a> </li>
+                                    <li class="active"> <a href="#"> <img src="images/leads.png" alt="leads image"> <span>Leads</span> </a> </li>
+                                    <li> <a href="estimation_list.html"> <img src="images/billing.png" alt="billing image"> <span>Billing</span> </a> </li>
+                                    <li> <a href="user_profile.html"> <img src="images/settings.png" alt="setting image"> <span>Setting</span> </a> </li>
+                                    <li> <a href="tutorial.html"> <img src="images/tuts.png" alt="tuts image"> <span>Tutorials</span> </a> </li>
+                                    <!-- /page kits -->
+                                </ul>
+                                <ul class="navigation navigation-main navigation-second">
+                                    <li> <a href="#"> SalesConnect </a> </li>
+                                    <li> <a href="dashboard.html"> Dashboard </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /main navigation -->
+
+                    </div>
+                </div>
+                <!-- /main sidebar -->
+                <div class="content-wrapper">
+<div class="content">
+                        <div class="white-box-list row">
+                            <div class="white-box"> 
+                                <a href="list.html" class="white-box-content hvr-shadow client active">
+                                    <ul class="list-inline middle-align">
+                                        <li> <img src="images/clients.png" class="img-responsive icon" alt="clients image">  CLIENTS </li>
+                                    </ul>
+                                    <p>121</p>
+                                    
+                                </a> 
+                            </div>
+                            <div class="white-box"> <a href="#">
+                                    <div class="white-box-content hvr-shadow hot">
+                                        <ul class="list-inline middle-align">
+                                            <li> <img src="images/hots.png" class="img-responsive icon" alt="clients image">  HOTS </li>
+                                        </ul>
+                                        <p>2222</p>
+                                    </div>
+                                </a> </div>
+                            <div class="white-box"> <a href="#">
+                                    <div class="white-box-content hvr-shadow warms">
+                                        <ul class="list-inline middle-align">
+                                            <li> <img src="images/warms.png" class="img-responsive icon" alt="clients image">  WARMS </li>
+                                        </ul>
+                                        <p>432</p>
+                                    </div>
+                                </a> </div>
+                            <div class="white-box"> <a href="#">
+                                    <div class="white-box-content hvr-shadow colds">
+                                        <ul class="list-inline middle-align">
+                                            <li> <img src="images/colds.png" class="img-responsive icon" alt="clients image">  COLDS </li>
+                                        </ul>
+                                        <p>23</p>
+                                    </div>
+                                </a> </div>
+                            <div class="white-box"> <a href="#">
+                                    <div class="white-box-content hvr-shadow contacts">
+                                        <ul class="list-inline middle-align">
+                                            <li> <img src="images/contacts.png" class="img-responsive icon" alt="clients image">  CONTACTS </li>
+                                        </ul>
+
+                                        <p>989</p>
+                                    </div>
+                                </a> </div>
+                            <div class="white-box"> <a href="#">
+
+                                    <div class="white-box-content hvr-shadow deads">
+                                        <ul class="list-inline middle-align">
+                                            <li> <img src="images/deds.png" class="img-responsive icon" alt="clients image">  DEADS </li>
+                                        </ul>
+
+                                        <p>112</p>
+                                    </div>
+                                </a> </div>
+                            <div class="white-box"> <a href="#">
+                                    <div class="white-box-content hvr-shadow others">
+                                        <ul class="list-inline middle-align">
+                                            <li> <img src="images/more.png" class="img-responsive icon" alt="clients image">  OTHERS </li>
+                                        </ul>
+
+                                        <p>67</p>
+                                    </div>
+                                </a> </div>
+                        </div>
+                        
+                        <table >
+                            <tbody>
+                                <td width="100%"></td>
+                                <td>
+                                    <select class="form-control-select black pull-left">
+                                <option>FY 2015-16</option>
+                                <option>FY 2016-17</option>
+                            </select>
+                                </td>
+                            </tbody>
+                        </table>
+                    
+                    </div>
+                      <div class="content">
+                        <div class="panel panel-flat no-flat  panel-light ">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><i class="fa fa-minus position-left"></i> Leads Consolidated </h4>
+                            </div>
+                            <div class="toggle-content row">
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table class="table table-default table-striped text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th> 
+                                                        <ul class="btn-group list-unstyled  btn-white">
+                                                            <li role="presentation" class="dropdown active"> <a type="button" class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Weekly <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href=".country1" aria-controls="home" role="tab" data-toggle="tab">Weekly</a></li>
+                                                                    <li><a href=".country2" aria-controls="home" role="tab" data-toggle="tab">QUARTERLY</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </th>
+                                                    <th>Client</th>
+                                                    <th>Hot</th>
+                                                    <th>Warm</th>
+                                                    <th>Cold</th>
+                                                    <th>Contact</th>
+                                                    <th>Dead</th>
+                                                    <th>Others</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>This week</td>
+                                                    <td>12</td>
+                                                    <td>14</td>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>10</td>
+                                                    <td>50</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1 Week Ago</td>
+                                                    <td>10</td>
+                                                    <td>30</td>
+                                                    <td>14</td>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                    <td>18</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2 Weeks Ago</td>
+                                                    <td>20</td>
+                                                    <td>15</td>
+                                                    <td>15</td>
+                                                    <td>10</td>
+                                                    <td>25</td>
+                                                    <td>10</td>
+                                                    <td>20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3 Weeks Ago</td>
+                                                    <td>12</td>
+                                                    <td>15</td>
+                                                    <td>22</td>
+                                                    <td>10</td>
+                                                    <td>15</td>
+                                                    <td>20</td>
+                                                    <td>18</td>
+                                                </tr>
+
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td>Total</td>
+                                                    <td>109</td>
+                                                    <td>102</td>
+                                                    <td>100</td>
+                                                    <td>112</td>
+                                                    <td>120</td>
+                                                    <td>125</td>
+                                                    <td>105</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="chart_responsive">
+                                        <div id="chartContainer" style="height: 185px; width: 100%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel panel-flat  panel-light">
+                                    <div class="panel-heading">
+                                        <h6 class="panel-title"><i class="fa fa-minus position-left"></i>  Leads Country - Wise </h6>
+                                        <div class="heading-elements">
+                                            <div class="heading-btn">
+                                                <ul class="btn-group">
+                                                    <li role="presentation" class="dropdown active"> 
+                                                        <a type="button" class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <h4>Country  &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></h4> </a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href=".sales1" aria-controls="home" role="tab" data-toggle="tab">India</a></li>
+                                                            <li><a href=".sales2" aria-controls="home" role="tab" data-toggle="tab">USA</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="toggle-content">
+                                        <div class="table-responsive">
+                                            <table class="table table-default table-striped  text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th> <ul class="btn-group list-unstyled">
+                                                                <li role="presentation" class="dropdown active"> <a type="button" class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Weekly <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a href=".country1" aria-controls="home" role="tab" data-toggle="tab">Weekly</a></li>
+                                                                        <li><a href=".country2" aria-controls="home" role="tab" data-toggle="tab">QUARTERLY</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </th>
+                                                        <th>Client</th>
+                                                        <th>Hot</th>
+                                                        <th>Warm</th>
+                                                        <th>Cold</th>
+                                                        <th>Contact</th>
+                                                        <th>Dead</th>
+                                                        <th>Others</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>This week</td>
+                                                        <td>12</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>10</td>
+                                                        <td>50</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1 Week Ago</td>
+                                                        <td>10</td>
+                                                        <td>30</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>17</td>
+                                                        <td>18</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2 Weeks Ago</td>
+                                                        <td>20</td>
+                                                        <td>15</td>
+                                                        <td>15</td>
+                                                        <td>10</td>
+                                                        <td>25</td>
+                                                        <td>10</td>
+                                                        <td>20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3 Weeks Ago</td>
+                                                        <td>12</td>
+                                                        <td>15</td>
+                                                        <td>22</td>
+                                                        <td>10</td>
+                                                        <td>15</td>
+                                                        <td>20</td>
+                                                        <td>18</td>
+                                                    </tr>
+
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td>Total</td>
+                                                        <td>109</td>
+                                                        <td>102</td>
+                                                        <td>100</td>
+                                                        <td>112</td>
+                                                        <td>120</td>
+                                                        <td>125</td>
+                                                        <td>105</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="panel panel-flat  panel-light">
+                                    <div class="panel-heading">
+                                        <h6 class="panel-title"><i class="fa fa-minus position-left"></i>  Leads Achievers  </h6>
+                                        <div class="heading-elements">
+                                            <div class="heading-btn">
+                                                <ul class="btn-group">
+                                                    <li role="presentation" class="dropdown active"> 
+                                                        <a type="button" class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <h4>Sales in Charge  &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></h4> </a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href=".sales1" aria-controls="home" role="tab" data-toggle="tab">Gowtham</a></li>
+                                                            <li><a href=".sales2" aria-controls="home" role="tab" data-toggle="tab">Raja</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="toggle-content">
+                                        <div class="table-responsive">
+                                            <table class="table table-default table-striped  text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th> <ul class="btn-group list-unstyled">
+                                                                <li role="presentation" class="dropdown active"> <a type="button" class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Weekly <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a href=".country1" aria-controls="home" role="tab" data-toggle="tab">Weekly</a></li>
+                                                                        <li><a href=".country2" aria-controls="home" role="tab" data-toggle="tab">QUARTERLY</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </th>
+                                                        <th>Client</th>
+                                                        <th>Hot</th>
+                                                        <th>Warm</th>
+                                                        <th>Cold</th>
+                                                        <th>Contact</th>
+                                                        <th>Dead</th>
+                                                        <th>Others</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>This week</td>
+                                                        <td>12</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>10</td>
+                                                        <td>50</td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1 Week Ago</td>
+                                                        <td>10</td>
+                                                        <td>30</td>
+                                                        <td>14</td>
+                                                        <td>15</td>
+                                                        <td>16</td>
+                                                        <td>17</td>
+                                                        <td>18</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2 Weeks Ago</td>
+                                                        <td>20</td>
+                                                        <td>15</td>
+                                                        <td>15</td>
+                                                        <td>10</td>
+                                                        <td>25</td>
+                                                        <td>10</td>
+                                                        <td>20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3 Weeks Ago</td>
+                                                        <td>12</td>
+                                                        <td>15</td>
+                                                        <td>22</td>
+                                                        <td>10</td>
+                                                        <td>15</td>
+                                                        <td>20</td>
+                                                        <td>18</td>
+                                                    </tr>
+
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td>Total</td>
+                                                        <td>109</td>
+                                                        <td>102</td>
+                                                        <td>100</td>
+                                                        <td>112</td>
+                                                        <td>120</td>
+                                                        <td>125</td>
+                                                        <td>105</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel panel-flat  panel-light">
+                                    <div class="panel-heading">
+                                        <h6 class="panel-title"><i class="fa fa-minus position-left"></i>  References </h6>
+                                    </div>
+                                    <div class="toggle-content">
+                                        <div id="chartdiv" style="height: 165px" class="match"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="panel panel-flat panel-light match">
+                                    <div class="panel-heading">
+                                        <h6 class="panel-title"><i class="fa fa-minus position-left"></i>  Activities </h6>
+                                        <div class="heading-elements">
+                                            <div class="heading-btn">
+                                                <ul class="btn-group">
+                                                    <li role="presentation" class="dropdown active"> 
+                                                        <a type="button" class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <h4>Sales in Charge  &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></h4> </a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href=".sales1" aria-controls="home" role="tab" data-toggle="tab">Gowtham</a></li>
+                                                            <li><a href=".sales2" aria-controls="home" role="tab" data-toggle="tab">Raja</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="toggle-content">
+                                        <div class="table-responsive">
+                                            <table class="table table-default table-striped text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th> <ul class="btn-group list-unstyled">
+                                                                <li role="presentation" class="dropdown active"> <a type="button" class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Weekly <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a href=".country1" aria-controls="home" role="tab" data-toggle="tab">Weekly</a></li>
+                                                                        <li><a href=".country2" aria-controls="home" role="tab" data-toggle="tab">QUARTERLY</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </th>
+                                                        <th>Visit Out</th>
+                                                        <th>Visit In</th>
+                                                        <th>TEL</th>
+                                                        <th>Mail</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>This week</td>
+                                                        <td>12</td>
+                                                        <td>20</td>
+                                                        <td>22</td>
+                                                        <td>32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1 Week Ago</td>
+                                                        <td>32</td>
+                                                        <td>22</td>
+                                                        <td>12</td>
+                                                        <td>2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2 Weeks Ago</td>
+                                                        <td>20</td>
+                                                        <td>15</td>
+                                                        <td>18</td>
+                                                        <td>19</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3 Weeks Ago</td>
+                                                        <td>22</td>
+                                                        <td>25</td>
+                                                        <td>28</td>
+                                                        <td>30</td>
+                                                    </tr>
+
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr class="tr-bg">
+                                                        <td>Total</td>
+                                                        <td>109</td>
+                                                        <td>102</td>
+                                                        <td>100</td>
+                                                        <td>112</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group stylish-input-group m-b-20">
+                                        <input type="text" class="form-control"  placeholder="Search Client-Name, Website, Email" >
+                                        <span class="input-group-addon">
+                                            <button type="submit">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                            </button>  
+                                        </span>
+                                    </div>
+                        <!-- /basic datatable -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>2016 &COPY; Indo-Sakura EnterpriseConnect</p>
+        </footer>
+
+        <script>
+            $(document).ready(function () {
+                $(".clickname").click(function () {
+                    $(this).parents(".mainopen").find(".opentg").slideToggle("swing");
+                    $(this).find("i").toggleClass("fa-plus fa-minus");
+                });
+
+                $('.navbar-toggles').click(function () {
+                    $('.sidebar-main').toggle();
+                    $('body').toggleClass('sidebar-open');
+                });
+
+                //Sidebar Toggle
+
+                var windows = jQuery(window).width();
+                if (windows < 500) {
+                    $(document).on('click', '.sidebar-open .content-wrapper', function (e) {
+                        e.preventDefault();
+                        $('.sidebar-main').toggle();
+                        $('body').toggleClass('sidebar-open');
+                    });
+                }
+                // $(document).on('click', '.sidebar-open .content-wrapper', function () {
+                //  $('.sidebar-main').toggle();
+                //    $('body').toggleClass('sidebar-open');
+                // });
+
+
+
+            });
+        </script> 
+        <script>
+            //--------------Bar Chart Script--------//
+            var chart = AmCharts.makeChart("chartdiv", {
+                "theme": "light",
+                "type": "serial",
+                "dataProvider": [{
+                        "year": "Google",
+                        "color": "#D6492F",
+                        "income": 23.5
+
+                    }, {
+                        "year": "Twitter",
+                        "color": "#598DCA",
+                        "income": 26.2
+
+                    }, {
+                        "year": "Facebook",
+                        "income": 30.1,
+                        "color": "#3A589B"
+                    }, {
+                        "year": "Yahoo",
+                        "income": 29.5,
+                        "color": "#720E9E"
+                    }, {
+                        "year": "LinkedIn",
+                        "income": 24.6,
+                        "color": "#007AB9"
+                    }],
+                "valueAxes": [{
+                        "title": "Number of Leads"
+                    }],
+                "graphs": [{
+                        "balloonText": "Income in [[category]]:[[value]]",
+                        "fillAlphas": 1,
+                        "colorField": "color",
+                        "lineAlpha": 0.2,
+                        "title": "Income",
+                        "type": "column",
+                        "valueField": "income"
+                    }],
+                "depth3D": 0,
+                "angle": 30,
+                "rotate": true,
+                "categoryField": "year",
+                "categoryAxis": {
+                    "gridPosition": "start",
+                    "fillAlpha": 0.05,
+                    "position": "left"
+                },
+                "export": {
+                    "enabled": true
+                }
+            });
+
+        </script> 
+        <!-- //----------Leads Consolidated ------------- // --> 
+        <script type="text/javascript">
+            window.onload = function () {
+
+                var chart = new CanvasJS.Chart("chartContainer",
+                        {
+                            title: {
+                                text: "",
+                                fontSize: 15,
+                            },
+                            height: 185,
+                            animationEnabled: true,
+                            axisY: {
+                                title: "Number of Leads",
+                                includeZero: true,
+                                titleFontSize: 12,
+                            },
+                            axisX: {
+                                title: "Months",
+                                interval: 1,
+                                titleFontSize: 12,
+                                labelFontSize: 12,
+                            },
+                            toolTip: {
+                                shared: true,
+                                content: function (e) {
+                                    var body = new String;
+                                    var head;
+                                    for (var i = 0; i < e.entries.length; i++) {
+                                        var str = "<span style= 'color:" + e.entries[i].dataSeries.color + "'> " + e.entries[i].dataSeries.name + "</span>: <strong>" + e.entries[i].dataPoint.y + "</strong>'' <br/>";
+                                        body = body.concat(str);
+                                    }
+                                    head = "<span style = 'color:DodgerBlue; '><strong>" + (e.entries[0].dataPoint.label) + "</strong></span><br/>";
+
+                                    return (head.concat(body));
+                                }
+                            },
+                            legend: {
+                                horizontalAlign: "center"
+                            },
+                            data: [
+                                {
+                                    type: "spline",
+                                    showInLegend: true,
+                                    name: "Clients",
+                                    dataPoints: [
+                                        {label: "Apr", y: 0},
+                                        {label: "May", y: 31},
+                                        {label: "Jun", y: 20},
+                                        {label: "Jul", y: 10},
+                                        {label: "Aug", y: 24},
+                                        {label: "Sep", y: 30},
+                                        {label: "Oct", y: 20},
+                                        {label: "Nov", y: 10},
+                                        {label: "Dec", y: 7},
+                                        {label: "Jan", y: 10},
+                                        {label: "Feb", y: 30},
+                                        {label: "Mar", y: 40}
+                                    ]
+                                },
+                                {
+                                    type: "spline",
+                                    visible: false, //***hidden      
+                                    showInLegend: true,
+                                    name: "Hots",
+                                    dataPoints: [
+                                        {label: "Apr", y: 10},
+                                        {label: "May", y: 0},
+                                        {label: "Jun", y: 30},
+                                        {label: "Jul", y: 20},
+                                        {label: "Aug", y: 7},
+                                        {label: "Sep", y: 10},
+                                        {label: "Oct", y: 20},
+                                        {label: "Nov", y: 30},
+                                        {label: "Dec", y: 22},
+                                        {label: "Jan", y: 36},
+                                        {label: "Feb", y: 20},
+                                        {label: "Mar", y: 12}
+                                    ]
+                                },
+                                {
+                                    type: "spline",
+                                    showInLegend: true,
+                                    visible: false, //***hidden      
+                                    name: "Warms",
+                                    dataPoints: [
+                                        {label: "Apr", y: 16},
+                                        {label: "May", y: 20},
+                                        {label: "Jun", y: 10},
+                                        {label: "Jul", y: 30},
+                                        {label: "Aug", y: 40},
+                                        {label: "Sep", y: 20},
+                                        {label: "Oct", y: 30},
+                                        {label: "Nov", y: 20},
+                                        {label: "Dec", y: 40},
+                                        {label: "Jan", y: 20},
+                                        {label: "Feb", y: 45},
+                                        {label: "Mar", y: 30}
+                                    ]
+                                }, {
+                                    type: "spline",
+                                    showInLegend: true,
+                                    visible: false, //***hidden      
+                                    name: "Colds",
+                                    dataPoints: [
+                                        {label: "Apr", y: 25},
+                                        {label: "May", y: 10},
+                                        {label: "Jun", y: 40},
+                                        {label: "Jul", y: 48},
+                                        {label: "Aug", y: 0},
+                                        {label: "Sep", y: 40},
+                                        {label: "Oct", y: 10},
+                                        {label: "Nov", y: 40},
+                                        {label: "Dec", y: 15},
+                                        {label: "Jan", y: 7},
+                                        {label: "Feb", y: 8},
+                                        {label: "Mar", y: 9}
+                                    ]
+                                },
+                                {
+                                    type: "spline",
+                                    showInLegend: true,
+                                    visible: false, //***hidden      
+                                    name: "Contacts",
+                                    dataPoints: [
+                                        {label: "Apr", y: 40},
+                                        {label: "May", y: 15},
+                                        {label: "Jun", y: 4},
+                                        {label: "Jul", y: 2},
+                                        {label: "Aug", y: 15},
+                                        {label: "Sep", y: 35},
+                                        {label: "Oct", y: 40},
+                                        {label: "Nov", y: 48},
+                                        {label: "Dec", y: 30},
+                                        {label: "Jan", y: 42},
+                                        {label: "Feb", y: 38},
+                                        {label: "Mar", y: 22}
+                                    ]
+                                },
+                                {
+                                    type: "spline",
+                                    showInLegend: true,
+                                    visible: false, //***hidden      
+                                    name: "Deads",
+                                    dataPoints: [
+                                        {label: "Apr", y: 35},
+                                        {label: "May", y: 5},
+                                        {label: "Jun", y: 0},
+                                        {label: "Jul", y: 5},
+                                        {label: "Aug", y: 4},
+                                        {label: "Sep", y: 3},
+                                        {label: "Oct", y: 4},
+                                        {label: "Nov", y: 5},
+                                        {label: "Dec", y: 5},
+                                        {label: "Jan", y: 28},
+                                        {label: "Feb", y: 1},
+                                        {label: "Mar", y: 5}
+                                    ]
+                                },
+                                {
+                                    type: "spline",
+                                    showInLegend: true,
+                                    visible: false, //***hidden 
+                                    name: "Others",
+                                    dataPoints: [
+                                        {label: "Apr", y: 19},
+                                        {label: "May", y: 19},
+                                        {label: "Jun", y: 24},
+                                        {label: "Jul", y: 21},
+                                        {label: "Aug", y: 43},
+                                        {label: "Sep", y: 31},
+                                        {label: "Oct", y: 17},
+                                        {label: "Nov", y: 21},
+                                        {label: "Dec", y: 21},
+                                        {label: "Jan", y: 37},
+                                        {label: "Feb", y: 28},
+                                        {label: "Mar", y: 24}
+                                    ]
+                                }
+                            ],
+                            legend :{
+                                cursor: "pointer",
+                                itemclick: function (e) {
+                                    $.each(e.chart.options.data, function (key, value) {
+                                        value.visible = false;
+                                    });
+                                    e.dataSeries.visible = true;
+                                    chart.render();
+                                }
+                            }
+
+                        });
+
+                chart.render();
+                window.onresize = function () {
+                    chart.render();
+                }
+            }
+
+        </script> 
+
+        <!--//Datepicker--> 
+        <script>
+            $('.selectpicker').selectpicker();
+            $(".panel-title").click(function () {
+                $(this).parents(".panel").find(".toggle-content").slideToggle("swing");
+                $(this).find("i").toggleClass("fa-plus fa-minus");
+            });
+            $(window).on('resize', function () {
+                pageheight();
+            });
+
+            $(document).ready(function () {
+                pageheight();
+                $('.bootstrap-select .bs-caret').html('<i class="fa fa-angle-down"></i>');
+            });
+            function pageheight() {
+                $('.page-container').css("min-height", $(window).height() - $('footer').height() - $('.navbar').height());
+            }
+            if ($(window).width() > 1199) {
+                $('.dropdown').on('show.bs.dropdown', function () {
+                    $(this).parents('.table-responsive').css("overflow", "visible");
+                    $(this).parents('.panel').css("overflow", "visible");
+                });
+
+                $('.dropdown').on('hide.bs.dropdown', function () {
+                    $(this).parents('.table-responsive').css("overflow", "auto");
+                    $(this).parents('.panel').css("overflow", "hidden");
+                });
+            }
+            $('.match').matchHeight();
+        </script> 
+        <style type="text/css">
+            #chartdiv{
+                height: 165px;
+            }
+        </style>
+    </body>
+</html>

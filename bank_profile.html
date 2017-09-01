@@ -1,0 +1,592 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>SalesConnect</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/hover-min.css">
+        <link rel="stylesheet" href="css/bootstrap-select.min.css" >
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/common_custom_siva.css">      
+
+        <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script  type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+        <script  type="text/javascript" src="js/owl.carousel.js"></script>
+        
+        <script type="text/javascript" src="js/common_custom_fun.js"></script>	
+
+        <!-- Resources -->
+        <script type="text/javascript" src="js/canvasjs.min.js"></script>
+        <script type="text/javascript" src="js/amcharts.js"></script>
+        <script  type="text/javascript" src="js/serial.js"></script>
+        <script type="text/javascript" src="js/light.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </head>
+    <body>
+        <!-- Main navbar -->
+        <div class="navbar navbar-inverse relative">
+            <div class="navbar-header"> <a class="navbar-brand" href="">SalesConnect</a> <a class="navbar-toggles navbar-brand" href="javascript:;"><img src="images/toggle.png" alt="toggle image"/></a>
+
+
+                <ul class="breadcrumb-custom">
+                    <li><a href="user_profile.html">Settings<i class="icon-entypo-chevron-right"></i></a></li>
+                    <li role="presentation" class="dropdown active"> <a type="button" class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bank Profile<i class="icon-entypo-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="user_profile.html">User Profile</a></li>
+                            <li><a href="client_profile.html">Client Profile</a></li>
+                            <li><a href="">Bank Profile</a></li>
+                            <li><a href="country_profile.html">Country Profile</a></li>
+                            <li><a href="System_profile.html">System Profile</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <a class="lgout" href="index.html"><img src="images/logout.png"/></a>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav">
+                    <li> <a class="sidebar-control sidebar-main-toggle hidden-xs"> <i class="icon-paragraph-justify3"></i> </a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /main navbar -->
+        <!-- Page container -->
+        <div class="page-container">
+
+            <!-- Page content -->
+            <div class="page-content">
+                <!-- Main sidebar -->
+                <div class="sidebar sidebar-main">
+                    <div class="sidebar-content">
+                        <!-- Main navigation -->
+                        <div class="sidebar-category sidebar-category-visible">
+                            <div class="category-content no-padding">
+                                <ul class="navigation navigation-main navigation-accordion">
+                                    <li class="sidebar-user"> <a href="#"> <img src="images/admin.jpg" class="img-circle" alt="admin image"> <span> Admin</span></a> </li>
+                                    <li> <a href="home.html"> <img src="images/home.png" alt="home imag/"> <span>Home</span> </a> </li>
+                                    <li> <a href="lead.html"> <img src="images/leads.png" alt="leads image"> <span>Leads</span> </a> </li>
+                                    <li> <a href="estimation_list.html"> <img src="images/billing.png" alt="billing image"> <span>Billing</span> </a> </li>
+                                    <li class="active"> <a href="user_profile.html"> <img src="images/settings.png" alt="setting image"> <span>Setting</span> </a> </li>
+                                    <li> <a href="tutorial.html"> <img src="images/tuts.png" alt="tuts image"> <span>Tutorials</span> </a> </li>
+                                    <!-- /page kits -->
+                                </ul>
+                                <ul class="navigation navigation-main navigation-second">
+                                    <li> <a href="#"> SalesConnect </a> </li>
+                                    <li> <a href="dashboard.html"> Dashboard </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /main navigation -->
+
+                    </div>
+                </div>
+                <!-- /main sidebar -->
+                <div class="content-wrapper">
+                    <div class="content">
+                        
+                        <!-- Basic datatable -->
+                        <!--Company -data -->
+                        <div class="panel panel-flat">
+                            <div class="panel-heading">
+                                <h6 class="panel-title"><i class="fa fa-minus position-left"></i>Add New Bank</h6>
+                            </div>
+                            <div class="toggle-content">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-common">
+                                        <tbody>
+                                            <tr>
+                                                <th width="20%">Bank Name</th>
+                                                <td width="30%"><input type="text" class="form-control" value="当社の特徴 当社の特徴" name=""></td>
+                                                <th width="20%">Country</th>
+                                                <td width="30%">
+                                                    <select  class="form-control">
+                                                        <option>当社の特徴</option>
+                                                        <option selected>当社の 特徴</option>
+                                                        <option>インドと日本</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Branch Name</th>
+                                                
+                                                <td><input type="text" class="form-control" value="インドと日本" name=""></td>
+                                                <th>Swift Code</th>
+                                                <td><input type="text" class="form-control" value="CITIAB3223" name=""></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Account No</th>
+                                                <td>
+                                                    <input type="text" class="form-control" value="32432423423" name="">
+                                                </td>
+                                                <th>Account Type</th>
+                                                <td>
+                                                    <select class="form-control">
+                                                        <option>インドと日本</option>
+                                                        <option selected>インドと日 本インドと日本</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Account Name</th>
+                                                <td colspan="3">
+                                                    <input type="text" class="form-control" value="インドと日本 インドと" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Bank Address & Tel</th>
+                                                <td colspan="3">
+                                                    <input type="text" class="form-control" value="3rd Cross street, LA Layout,Tokyo" name="">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <ul class="list-inline text-right  btn-li"> 
+                                <li><button class="btn btn-dark" type="button">SAVE</button></li>
+                                <li><button class="btn btn-dark" type="button">CANCEL</button></li>
+                            </ul>
+                        <!-- buttons -->
+                        
+                    </div>
+                    <div class="content">
+                        <div class="row m-0">
+                                            <div class="col-lg-2 p-0  text-right">
+                                            </div>
+                                            <div class="col-lg-6 p-0">
+                                                <div class="input-group stylish-input-group ">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 p-0  text-right">
+                                            </div>
+                                            <div class="col-lg-2 text-right  p-0">
+                                                <span class="m-t-5 m-r-5 vcenter">Show per page</span>
+                                                <select style="width: 40%" class="m-b-20 form-control-select black pull-right">
+                                                    <option>25</option>
+                                                    <option>50</option>
+                                                </select>
+                                             </div>
+                                         </div>
+                    </div>
+                    <div class="content">
+                        <div class="panel panel-flat panel-light">
+                            <div class="panel-heading">
+                                <h6 class="panel-title"><i class="fa fa-minus position-left"></i>LIST OF BANKS</h6>
+                            </div>
+                            <div class="toggle-content">
+                                <div class="table-responsive">
+                                    <table class="table table-custom  table-striped table-hover table-default">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>NO</th>
+                                            <th>Bank Name<a href="#" class="sorting"><i class="fa fa-sort-alpha-asc sorting" aria-hidden="true"></i></a> </th>
+                                            <th>Branch Name</th>
+                                            <th>Account No</th>
+                                            <th>Account Name</th>
+                                            <th>Country</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr onDblClick="slide_down('bank-1')">
+                                            <td onClick="slide_down('bank-1');view_mode('test');"><a class="grey-font"><i id="bank-1-slide-button"   class="fa fa-plus"> </i></a></td>
+                                            <td>1</td>
+                                            <td>インドと日本 インドと日本</td>
+                                            <td>インドと インドと日本 日本</td>
+                                            <td>33300242332</td>
+                                            <td>インドと日 ンドと日本</td>
+                                            <td>インドと日本</td>
+                                        </tr>
+                                        <tr id="bank-1" style="display: none">
+                                            <td class="list-edit-td" colspan="7" style="background: #f3f4f6;">
+                                                
+                                                    <div class="panel panel-flat">
+                                                        <div class="toggle-content">
+                                                            <div class="table-responsive">
+                                                                <table  class="table hidden table-bordered table-common " id="test-edit-mode">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th width="20%">Bank Name</th>
+                                                                            <td width="30%"><input type="text" value="インドと日本 インドと" class="form-control" name="form-control"></td>
+                                                                            <th width="20%">Country</th>
+                                                                            <td width="30%">
+                                                                                <select style="width:100%" class="form-control">
+                                                                                    <option selected>インドと日本</option>
+                                                                                    <option>イン日本</option>
+                                                                                    <option>インドと日本</option>
+                                                                                </select>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th >Branch Name</th>
+                                                                            <td ><input value="インドと日本"  type="text" class="form-control" name=""></td>
+                                                                            <th>Swift Code</th>
+                                                                            <td><input value="CITIAB3223"   type="text" class="form-control" name=""></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Account No</th>
+                                                                            <td>
+                                                                                <input type="text" value="3243242343" class="form-control" name="">
+                                                                            </td>
+                                                                            <th>Account Type</th>
+                                                                            <td>
+                                                                                <select class="form-control">
+                                                                                    <option>ドと日本</option>
+                                                                                    <option selected>イン日本 インドと日本</option>
+                                                                                </select>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Account Name</th>
+                                                                            <td colspan="3">
+                                                                                <input type="text"  value="インドと日本"class="form-control" name="">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Bank Address & Tel</th>
+                                                                            <td colspan="3">
+                                                                                <input type="text" value="Test Address and telephone number" class="form-control" name="">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="table table-bordered table-common" id="test">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th width="20%">Bank Name</th>
+                                                                            <td width="30%">インドと日本 インドと日本</td>
+                                                                            <th width="20%">Country</th>
+                                                                            <td width="30%">
+                                                                                インドと日本
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th>Branch Name</th>
+                                                                            <td>インドと日 インドと日本本</td>
+                                                                            <th>Swift Code</th>
+                                                                            <td>SDFS32RWE</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Account No</th>
+                                                                            <td>
+                                                                                97212398729
+                                                                            </td>
+                                                                            <th>Account Type</th>
+                                                                            <td>
+                                                                                インドと日本
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Account Name</th>
+                                                                            <td colspan="3">
+                                                                                インドと インドと日本日本
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Bank Address & Tel</th>
+                                                                            <td colspan="3">
+                                                                                インド インドと日本 と日本
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- buttons -->
+                                                    <ul class="list-inline text-right  btn-li"> 
+                                                        <li><button onClick="edit_mode('test')" class="btn btn-dark" type="button">EDIT</button></li>
+                                                        <li><button class="btn btn-dark" type="button">SAVE</button></li>
+                                                        <li><button onClick="view_mode('test');slide_down('bank-1')" class="btn btn-dark" type="button">CANCEL</button></li>
+                                                    </ul>
+                                                
+                                            </td>
+                                        </tr>
+
+                                        <!-- bank 2-->
+                                        <tr onDblClick="slide_down('bank-2')">
+                                            <td onClick="slide_down('bank-2')"><a class="grey-font"><i id="bank-2-slide-button"   class="fa fa-plus"> </i></a></td>
+                                            <td>2</td>
+                                            <td>ドドと ンドと日本</td>
+                                            <td>本インドと日本日本 インドと日本 </td>
+                                            <td>222222222222</td>
+                                            <td> 日本と 日本 イン日本</td>
+                                            <td>ドと日本</td>
+                                        </tr>
+                                        <tr id="bank-2" style="display: none">
+                                            <td class="list-edit-td" colspan="7" style="background: #f3f4f6">
+                                                    <div class="panel panel-flat">
+                                                        <div class="toggle-content">
+                                                            <div class="table-responsive">
+                                                                <table  class="table hidden table-bordered table-common " id="test2-edit-mode">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th width="20%">Bank Name</th>
+                                                                            <td width="30%"><input type="text" class="form-control" name="form-control"></td>
+                                                                            <th width="20%">Country</th>
+                                                                            <td width="30%">
+                                                                                <select style="width:100%" class="form-control">
+                                                                                    <option selected>JAPAN</option>
+                                                                                    <option>INDIA</option>
+                                                                                    <option>USA</option>
+                                                                                </select>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th >Branch Name</th>
+                                                                            <td ><input  type="text" class="form-control" name=""></td>
+                                                                            <th>Swift Code</th>
+                                                                            <td><input   type="text" class="form-control" name=""></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Account No</th>
+                                                                            <td>
+                                                                                <input type="text" class="form-control" name="">
+                                                                            </td>
+                                                                            <th>Account Type</th>
+                                                                            <td>
+                                                                                <select class="form-control">
+                                                                                    <option>Current</option>
+                                                                                    <option selected>Savings</option>
+                                                                                </select>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Account Name</th>
+                                                                            <td colspan="3">
+                                                                                <input type="text" class="form-control" name="">
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Bank Address & Tel</th>
+                                                                            <td colspan="3">
+                                                                                <input type="text" class="form-control" name="">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="table table-bordered table-common" id="test2">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th width="20%">Bank Name</th>
+                                                                            <td width="30%">Test Bank Name 2</td>
+                                                                            <th width="20%">Country</th>
+                                                                            <td width="30%">
+                                                                                    <option>JAPAN</option>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <th>Branch Name</th>
+                                                                            <td>Bhanashankari 2</td>
+                                                                            <th>Swift Code</th>
+                                                                            <td>SDFS32RWE 2</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Account No</th>
+                                                                            <td>
+                                                                                2222222222
+                                                                            </td>
+                                                                            <th>Account Type</th>
+                                                                            <td>
+                                                                                Savings
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Account Name</th>
+                                                                            <td colspan="3">
+                                                                                Test Account Name 2
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th>Bank Address & Tel</th>
+                                                                            <td colspan="3">
+                                                                                Test Bank address, Test Bank address,Test Bank address
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- buttons -->
+                                                    <ul class="list-inline text-right  btn-li"> 
+                                                        <li><button onClick="edit_mode('test2')" class="btn btn-dark" type="button">EDIT</button></li>
+                                                        <li><button class="btn btn-dark" type="button">SAVE</button></li>
+                                                        <li><button onClick="view_mode('test2');slide_down('bank-2')" class="btn btn-dark" type="button">CANCEL</button></li>
+                                                    </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                    <div class="panel panel-flat inner-toggle">
+                    <p class="showingpara"> Showing 1 to 10 of 47 entries </p>
+                        <ul class="pagination pagination-separated">
+                            <li class="active"><a href="#">PREV</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li class="active"><a href="#">NEXT</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="content">  
+                        <div class="panel panel-flat">  
+                            <div class="table-responsive">
+                                <table class="table table-default"  >
+                                    <thead>
+                                        <tr>
+                                            <th>Financial Year</th>
+                                            <th>USD</th>
+                                            <th>JPY</th>
+                                            <th>INR</th>
+                                            
+                                        </tr>
+
+                                        
+                                    </thead>
+                                    <tbody>
+                                        <tr  id="year-index-1" ondblclick="edit_mode('year-index-1');currency_edit_mode('year-index-1')">
+                                            <td width="30%"> 2014-15</td>
+                                            <td width="23.33%">1.00</td>
+                                            <td width="23.33%">112.12</td>
+                                            <td width="23.33%">33.33</td>
+                                        </tr>
+                                        <tr class="hidden" id="year-index-1-edit-mode">
+                                                    <td colspan="4" class="p-0">
+                                                    <table class="w-100">
+                                                        <tbody class="table table-default">
+                                                            <tr>
+                                                                <td width="30%">
+                                                                <select class="form-control year">
+                                                                    <option selected>2014-15</option>
+                                                                </select>
+                                                                <input type="hidden"   />
+                                                                <input type="hidden"  />
+                                                                </td>
+                                                                <td width="23.33%"><input step="1" value="1.00"  type="number" class="form-control usd"  maxlength="1"></td>
+                                                                <td width="23.33%"><input step="0.01" value="112.00"  type="number" class="form-control jpy" name="jpy" ></td>
+                                                                <td><input step="0.01" type="number" value="33.00" class="form-control inr" ></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ul class="list-inline text-right  btn-li m-t-20"> 
+                                                        <li><button class="btn btn-dark" type="button">SAVE</button></li>
+                                                        <li><button onclick="currency_edit_mode('year-index-1');view_mode('year-index-1')" class="btn btn-dark" type="button">CANCEL</button></li>
+                                                    </ul>
+                                                    </td>
+                                                    
+                                                   
+                                                </tr>
+                                        
+                                                <tr  id="year-index-2" ondblclick="edit_mode('year-index-2');currency_edit_mode('year-index-2')">
+                                            <td width="30%"> 2015-16</td>
+                                            <td width="23.33%">1.00</td>
+                                            <td width="23.33%">112.12</td>
+                                            <td width="23.33%">33.33</td>
+                                        </tr>
+                                        <tr class="hidden" id="year-index-2-edit-mode">
+                                                    <td colspan="4" class="p-0">
+                                                    <table class="w-100">
+                                                        <tbody class="table table-default">
+                                                            <tr>
+                                                                <td width="30%">
+                                                                <select class="form-control year">
+                                                                    <option selected>2015-16</option>
+                                                                </select>
+                                                                <input type="hidden"   />
+                                                                <input type="hidden"  />
+                                                                </td>
+                                                                <td width="23.33%"><input step="1" value="1.00"  type="number" class="form-control usd"  maxlength="1"></td>
+                                                                <td width="23.33%"><input step="0.01" value="112.00"  type="number" class="form-control jpy" name="jpy" ></td>
+                                                                <td><input step="0.01" type="number" value="33.00" class="form-control inr" ></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <ul class="list-inline text-right  btn-li m-t-20"> 
+                                                        <li><button class="btn btn-dark" type="button">SAVE</button></li>
+                                                        <li><button onclick="currency_edit_mode('year-index-2');view_mode('year-index-2')" class="btn btn-dark" type="button">CANCEL</button></li>
+                                                    </ul>
+                                                    </td>
+                                                </tr>
+                                        
+                                    </tbody>
+                                    
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <ul class="list-inline text-left  btn-li"> 
+                            <li ><button onclick="toggle('add-new-currency')" class="btn btn-dark" type="button"> <a style="color:white"  ><i id="add-new-currency-plus-button" class="fa fa-plus"> </i></a></button></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="content hidden" id="add-new-currency">  
+                        <div class="panel panel-flat">  
+                            <div class="table-responsive">
+                                <table  class="table table-default table-striped table-hover ">
+                                    <thead>
+                                        <tr>
+                                            <th>Financial Year<a href="#" class="sorting"></th>
+                                            <th>USD</th>
+                                            <th>JPY</th>
+                                            <th>INR</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td width="30%">
+                                                <input data-financialYear=""  list="financialYearSelected" class="form-control"  maxlength="7">
+                                                          <datalist id="financialYearSelected" >
+                                                            <option value="2015-16"></option>
+                                                            <option value="2016-17"></option>
+                                                            <option value="2017-18"></option>
+                                                          </datalist>
+                                            </td>
+                                            <td width="23.33%"><input type="text" class="form-control" name=""></td>
+                                            <td width="23.33%"><input type="text" class="form-control" name=""></td>
+                                            <td width="23.33%"><input type="text" class="form-control" name=""></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+
+                        </div>
+                        <ul class="list-inline text-right  btn-li"> 
+                            <li><button class="btn btn-dark" type="button">SAVE</button></li>
+                            <li><button class="btn btn-dark" onClick="toggle('add-new-currency')" type="button">CANCEL</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </body>
+        <script type="text/javascript" src="js/common_custom_ui.js"></script>
+        <footer>
+            <p>2016 &COPY; Indo-Sakura EnterpriseConnect</p>
+        </footer>
+        
+            
+</html>

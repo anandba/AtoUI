@@ -1,0 +1,179 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>SalesConnect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/hover-min.css">
+        <link rel="stylesheet" href="css/bootstrap-select.min.css" >
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/common_custom_siva.css">
+
+        <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script  type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+        <script  type="text/javascript" src="js/owl.carousel.js"></script>
+        <script  type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+        <script  type="text/javascript" src="js/Bootstrap-responsive-table-dropdown-fix.js"></script>
+
+
+        <!-- Resources -->
+        <script type="text/javascript" src="js/canvasjs.min.js"></script>
+        <script type="text/javascript" src="js/amcharts.js"></script>
+        <script  type="text/javascript" src="js/serial.js"></script>
+        <script type="text/javascript" src="js/light.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </head>
+    <body>
+        <!-- Main navbar -->
+        <div class="navbar navbar-inverse relative">
+            <div class="navbar-header"> <a class="navbar-brand" href="#">EnterpriseConnect</a> <a class="navbar-toggles navbar-brand" href="javascript:;"><img src="images/toggle.png" alt="toggle image"/></a>
+                <ul class="breadcrumb crumbs">
+                    <li><a href="#"> Dashboard &nbsp;</a></li>
+                </ul>
+            </div>
+           <a class="lgout" href="index.html"><img src="images/logout.png"/></a>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav">
+                    <li> <a class="sidebar-control sidebar-main-toggle hidden-xs"> <i class="icon-paragraph-justify3"></i> </a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /main navbar -->
+        <!-- Page container -->
+        <div class="page-container">
+
+            <!-- Page content -->
+            <div class="page-content">
+                <!-- Main sidebar -->
+                <div class="sidebar sidebar-main">
+                    <div class="sidebar-content">
+                        <!-- Main navigation -->
+                        <div class="sidebar-category sidebar-category-visible">
+                            <div class="category-content no-padding">
+                                <ul class="navigation navigation-main navigation-accordion">
+                                    <li class="sidebar-user"> <a href="#"> <img src="images/admin.jpg" class="img-circle" alt="admin image"> <span> Admin</span></a> </li>
+
+                                    <!-- /page kits -->
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- /main navigation -->
+
+                    </div>
+                </div>
+                <!-- /main sidebar -->
+                <div class="content-wrapper">
+                    <div class="content">
+                        <h3 class ="dashboard-heading"> DASHBOARD </h3>
+                        <div class="dashboard-list row">
+                            <div  class="col-md-3 col-sm-6 dashboard"> <a href="#">
+                                    <div onClick="location.href='home.html'" class ="dashboard-flat salesconnecticon hvr-shadow active">
+                                        <img src="images/icon1.png" class="img-responsive" alt="salesconnecticon">
+                                        <p> SALES CONNECT </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div  class="col-md-3 col-sm-6 dashboard "> <a href="#">
+                                    <div class ="dashboard-flat employeeconnect hvr-shadow">
+                                        <img src="images/icon2.png" class="img-responsive" alt="employeeconnect">
+                                        <p>EMPLOYEE CONNECT </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div  class="col-md-3 col-sm-6 dashboard"> <a href="#">
+                                    <div class ="dashboard-flat project hvr-shadow">
+                                        <img src="images/icon3.png" class="img-responsive" alt="project">
+                                        <p> PROJECTS </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div  class="col-md-3 col-sm-6 dashboard"> <a href="#">
+                                    <div class ="dashboard-flat sakuratranding hvr-shadow">
+                                        <img src="images/icon8.png" class="img-responsive" alt="sakuratranding">
+                                        <p>SAKURA TRADING </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div  class="col-md-3 col-sm-6 dashboard"> <a href="#">
+                                    <div class ="dashboard-flat accounting hvr-shadow">
+                                        <img src="images/icon4.png" class="img-responsive" alt="accounting">
+                                        <p> ACCOUNTING </p>
+                                    </div> 
+                                </a>
+                            </div>
+                            <div  class="col-md-3 col-sm-6 dashboard "> <a href="#">
+                                    <div class ="dashboard-flat products hvr-shadow">
+                                        <img src="images/icon5.png" class="img-responsive" alt="products">
+                                        <p> PRODUCTS </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div  class="col-md-3 col-sm-6 dashboard "> <a href="#">
+                                    <div class ="dashboard-flat administration hvr-shadow">
+                                        <img src="images/icon6.png" class="img-responsive" alt="administration">
+                                        <p> ADMINISTRATION</p>
+                                    </div>
+                                </a> 
+                            </div>
+                            <div  class="col-md-3 col-sm-6 dashboard"> <a href="#">
+                                    <div class ="dashboard-flat settings hvr-shadow">
+                                        <img src="images/icon7.png" class="img-responsive" alt="settings">
+                                        <p>  SETTING </p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>2016 &COPY; Indo-Sakura EnterpriseConnect</p>
+        </footer>
+
+        <script>
+            $(document).ready(function () {
+                $('.navbar-toggles').click(function () {
+                    $('.sidebar-main').toggle();
+                    $('body').toggleClass('sidebar-open');
+                });
+
+                //Sidebar Toggle
+
+                var windows = jQuery(window).width();
+                if (windows < 500) {
+                    $(document).on('click', '.sidebar-open .content-wrapper', function (e) {
+                        e.preventDefault();
+                        $('.sidebar-main').toggle();
+                        $('body').toggleClass('sidebar-open');
+                    });
+                }
+
+                // $(document).on('click', '.sidebar-open .content-wrapper', function () {
+                //  $('.sidebar-main').toggle();
+                //    $('body').toggleClass('sidebar-open');
+                // });
+            });
+        </script> 
+        <!--//Datepicker--> 
+        <script>
+            $(window).on('resize', function () {
+                pageheight();
+            });
+            $(document).ready(function () {
+                pageheight();
+                $('.bootstrap-select .bs-caret').html('<i class="fa fa-angle-down"></i>');
+            });
+            function pageheight() {
+                $('.page-container').css("min-height", $(window).height() - $('footer').height() - $('.navbar').height() - 22);
+            }
+
+        </script> 
+    </body>
+</html>

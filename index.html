@@ -1,353 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>SalesConnect</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/hover-min.css">
+        <link rel="stylesheet" href="css/build.css">
+        <link rel="stylesheet" href="css/bootstrap-select.min.css" >
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/common_custom_siva.css">
 
-<head>
+        <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script  type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+        <script  type="text/javascript" src="js/owl.carousel.js"></script>
+        <script  type="text/javascript" src="js/Bootstrap-responsive-table-dropdown-fix.js"></script>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <!-- Resources -->
+        <script type="text/javascript" src="js/canvasjs.min.js"></script>
+        <script type="text/javascript" src="js/amcharts.js"></script>
+        <script  type="text/javascript" src="js/serial.js"></script>
+        <script type="text/javascript" src="js/light.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </head>
+    <body>
+        <div class="indo-heading clearfix" id="header">
+            <div class="container">
+                <div class="col-md-10 col-xs-10">
+                    <span class="heading"> EnterpriseConnect </span> <span class="heading-content"> - Indo Sakura ERP System </span> 
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <img src="images/logo.png"alt="logo" class="logoimg">
+                </div>
 
-    <title>Erai Technologies | Welcome</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" sizes="32x32" href="images/logo_red_transparent.png" type="image/x-icon" />
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <img class="navbar-brand" src="images/logo_red_transparent.png"  alt="logo"/><a class="navbar-brand" href="index.html">Erai Technologies</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                       <li class="dropdown">
-                        <a href="products.html" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="adt.html">ATO Device Tracker</a>
-                            </li>
-                            <li>
-                                <a href="salesconnect.html">Sales Connect</a>
-                            </li>
+        </div>
+        <div class="login clearfix" >
+
+            <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3">
+                <div class="form-sign-in clearfix">
+                    <h4 class="login-title">Login to your account</h4>
+                    <form class="form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon grey-addon"><i class="fa fa-user" aria-hidden="true"></i>
+                                </span>
+                                <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon grey-addon"><i class="fa fa-lock" aria-hidden="true"></i>
+                                </span>
+                                <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status"  placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group clearfix">
+                            <label class="pull-left left-label">
+                                <input type="checkbox" id="checkbox"> Remember Me 
+                            </label>
+                            <button type="button" onClick="location.href='dashboard.html'" class="btn login-btn pull-right hvr-shadow"> Login <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>      
+                    <a class="fo-size-medium" href="#"> Forgot your password ? </a>
+                    <a class="red" href="forgotpassword.html"> Retrieve Here</a>
+                    <hr>
+                    <div class="col-md-6 col-xs-6 no-padding full-wid clearfix">
+                        <p> Choose Your Language </p>  
+                    </div>
+                    <div class="col-md-6  col-xs-6 no-padding lang full-wid clearfix">
+                        <ul class="list-inline language_list"> 
+                            <li class="fo-size"> <a href="#">English </a></li> 
+                            <li class="fo-size red "> <a href="#"> Japanese  </a></li>
                         </ul>
-                    </li>
-                    </li>
-                    <li>
-                       <li class="dropdown">
-                        <a href="services.html" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="iot.html">IOT</a>
-                            </li>
-                            <li>
-                                <a href="mobile.html">Mobile Application Development</a>
-                            </li>
-                            <li>
-                                <a href="enterprise.html">Enterprise Application Development</a>
-                            </li>
-                            <li>
-                                <a href="corporates.html">Corporate Japanese Training</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="careers.html">Careers</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-<!--                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
-                    </li> -->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('images/cas1.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2></h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('images/cas2.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2> </h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('images/cas3.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2></h2>
-                </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Marketing Icons Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    Welcome to Erai Technologies
-                </h1>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> IT Services</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>We provide Cost-effective I.T. Services with Highest quality and customer satisfaction.<br/>
-                        We provide complete managed information technology services.<br/>
-                        We are expertise in systems development in India and Japan.</p>
-                        <!-- <a href="#" class="btn btn-default">Learn More</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Products</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>We convert ideas into cutting edge Social/Mobile/Cloud & Desktop Products.<br/>
-                        We solve business problems with our innovative products.<br/>
-                        By using our expertise and technology , we build products to make our cutsomers happy.<br/>
-                        </p>
-                        <!-- <a href="#" class="btn btn-default">Learn More</a> -->
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Corporate Japanese Training</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>IT specific training of Japanese language: 6 months full time intensive language training with focus on Japanese business and social culture.<br/>Candidates are groomed to work in Japan independantly along with business etiquates and bilingual skills. 
-                         <!-- <a href="#" class="btn btn-default">Learn More</a>-->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /.row -->
-        <!-- Features Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">ATO Device Tracker</h2>
-            </div>
-            <div class="col-md-6">
-                <p>ATO Device Tracker is smart GPS tracking system available on Web and Android application.
-This system is designed for school buses, tourist vehicles to monitor them during transportation.</p>
-                 <strong>The key benefits that ATO offers are:</strong>
-                <ul>
-                    <li>Real time location tracking of vehicles</li>
-                    <li>Tracking of individual devices and group of devices</li>
-                    <li>Alerts for Emergency, Speed, Journeys and Geozones</li>
-                    <li>Fully Responsive Web tracking</li>
-                    <li>Tracking via Android Application</li>
-                    <li>No need of external Tracking Device.Smart phone can act as Tracking Device</li>
-                </ul>
-                <p><a href="adt.html" class="btn btn-default">Learn More</a></p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="images/ato.jpg" alt="">
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">ATO Application Areas</h2>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="images/tanker.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="images/schoolbus.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="images/private.jpg" alt="">
-                </a>
-            </div>
-            <!-- <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>  -->
-        </div>
-        <!-- /.row -->
-
-        
-
-        <hr>
-
-        <!-- Call to Action Section -->
-        <div class="well">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>If you are in serach of smart tracking system, your wait is over.</p><p>You can reach us for free demo.</p>
-                </div>
-                <div class="col-md-6">
-                    <a class="btn btn-lg btn-default btn-block" href="mailto:enquiry@eraitechnologies.com"><i class="fa fa-envelope-o">&nbsp;&nbsp;</i>enquiry@eraitechnologies.com</a>
-                </div>
-                <div class="col-md-6">
-                    <a class="btn btn-lg btn-default btn-block" href="#"><i class="fa fa-phone"">&nbsp;&nbsp;</i>020-24463683, 9623038582</a>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>&copy; Copyright  Erai Technologies 2017, All rights Reserved</p>
-                </div>
-            </div>
+        <footer id="footer">
+            <p>2016 &COPY; Indo-Sakura EnterpriseConnect</p>
         </footer>
+         </body>
+        <script>
+            //docheight = $(document).height();
+          
+			
+			
+			$(window).on('resize', function () {
+                pageheight();
+            });
 
-    </div>
-    <!-- /.container -->
+            $(document).ready(function () {
+                pageheight();
+                $('.bootstrap-select .bs-caret').html('<i class="fa fa-angle-down"></i>');
+            });
+            function pageheight() {
+                windowheight = $(window).height();
+            headerheight = $('#header').height();
+            footerheight = $('#footer').height();
+            pheight = parseFloat(windowheight) - (parseFloat(headerheight) + parseFloat(footerheight)) - 37;
+            $('.login').css('min-height', pheight + 'px');
+            console.log('heit :'+pheight);
+            }
+        </script>
+   
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
-
-</body>
 
 </html>

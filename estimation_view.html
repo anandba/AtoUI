@@ -1,0 +1,378 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>SalesConnect</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/hover-min.css">
+        <link rel="stylesheet" href="css/bootstrap-select.min.css" >
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/common_custom_siva.css">
+
+        <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script  type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+        <script  type="text/javascript" src="js/owl.carousel.js"></script>
+
+
+        <!-- Resources -->
+        <script type="text/javascript" src="js/canvasjs.min.js"></script>
+        <script type="text/javascript" src="js/amcharts.js"></script>
+        <script  type="text/javascript" src="js/serial.js"></script>
+        <script type="text/javascript" src="js/light.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        
+        <script type="text/javascript" src="js/common_custom_fun.js"></script>
+        <script type="text/javascript" src="js/html2canvas.js"></script>
+        <script type="text/javascript" src="js/canvas2image.js"></script>
+        <script type="text/javascript" src="js/base64.js"></script>
+        <script type="text/javascript" src="js/estimation_view.js"></script>
+        
+    </head>
+    <body>
+        <!-- Main navbar -->
+        <div class="navbar navbar-inverse relative">
+            <div class="navbar-header"> <a class="navbar-brand" href="">SalesConnect</a> <a class="navbar-toggles navbar-brand" href="javascript:;"><img src="images/toggle.png" alt="toggle image"/></a>
+                <ul class="breadcrumb-custom">
+                    <li><a href="estimation_list.html">Billing<i class="icon-entypo-chevron-right"></i></a></li>
+                    <li><a href="estimation_list.html">Estimation<i class="icon-entypo-chevron-right"></i></a></li>
+                    <li role="presentation" class="dropdown active"> <a type="button" class="dropdown-toggle" href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">View<i class="icon-entypo-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="estimation_list.html">List</a></li>
+                            <li><a href="estimation_create.html">Create</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a class="lgout" href="index.html"><img src="images/logout.png"/></a>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav">
+                    <li> <a class="sidebar-control sidebar-main-toggle hidden-xs"> <i class="icon-paragraph-justify3"></i> </a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /main navbar -->
+        <!-- Page container -->
+        <div class="page-container">
+
+            <!-- Page content -->
+            <div class="page-content">
+                <!-- Main sidebar -->
+                <div class="sidebar sidebar-main">
+                    <div class="sidebar-content">
+                        <!-- Main navigation -->
+                        <div class="sidebar-category sidebar-category-visible">
+                            <div class="category-content no-padding">
+                                <ul class="navigation navigation-main navigation-accordion">
+                                    <li class="sidebar-user"> <a href="#"><img src="images/admin.jpg" class="img-circle" alt="user image"> <span>Admin </span> </a> </li>
+                                    <li> <a href="home.html"> <img src="images/home.png" alt="home imag/"> <span>Home</span> </a> </li>
+                                    <li> <a href="lead.html"> <img src="images/leads.png" alt="leads image"> <span>Leads</span> </a> </li>
+                                    <li class="active"> <a href="estimation_list.html"> <img src="images/billing.png" alt="billing image"> <span>Billing</span> </a> </li>
+                                    <li> <a href="user_profile.html"> <img src="images/settings.png" alt="setting image"> <span>Setting</span> </a> </li>
+                                    <li> <a href="tutorial.html"> <img src="images/tuts.png" alt="tuts image"> <span>Tutorials</span> </a> </li>
+                                    <!-- /page kits -->
+                                </ul>
+                                <ul class="navigation navigation-main navigation-second">
+                                    <li> <a href="#"> <span class="noimg">SalesConnect</span> </a> </li>
+                                    <li> <a href="dashboard.html"> <span class="noimg">Dashboard</span> </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /main navigation -->
+
+                    </div>
+                </div>
+                <!-- /main sidebar -->
+
+
+
+                <div class="content-wrapper">
+                    
+                     <div class="content">
+                            <div class="row m-0">
+
+                              <div class="col-md-2 p-0">
+                                  <select id="billing-select" onchange="redirect_page_list()" data-selected="ESTIMATION" class="form-control-select black pull-left w-100">
+                                    <option>ESTIMATION</option>
+                                    <option>INVOICE</option>
+                                </select>
+                              </div>
+                              
+                              <div class="col-md-6 p-0">
+                                    <div class="input-group stylish-input-group">
+                                        <input type="text" class="form-control"  placeholder="<Client Name / Estimation ID/ Sales Person>" >
+                                        <span class="input-group-addon">
+                                            <button type="submit">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                            </button>  
+                                        </span>
+                                    </div>
+            
+                              </div>
+                              <div class="col-md-2 p-0" >
+                                  <button style="width: 100%" onclick="location.href='estimation_create.html'" type="button" class=" form-control-button dark-grey-btn pull-left">CREATE NEW</button>
+                              </div>
+                              
+                              <div class="col-md-2 p-0">
+                                <select class="form-control-select w-100  black pull-left">
+                                    <option>FY 2015-16</option>
+                                    <option>FY 2016-17</option>
+                                </select>
+                            </div>
+                              
+                              
+                            </div>
+                        
+                    </div>
+                    
+                    <div class="content" style="float: none">
+
+                        <!-- Basic datatable -->
+                        <!--Company -data -->
+                        <div class="panel panel-flat">
+                            <div class="panel-heading">
+                                <h6 class="panel-title"><i class="fa fa-minus position-left"></i>Estimation Data</h6>
+                                <div class="heading-elements">
+                                   <div class="heading-btn">
+                                        <a href="#"><h4><img class="add-new-target-image" src="images/copy_icon.png" alt="add new company icon">Create a Duplicate</h4> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="toggle-content">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-common">
+                                        <tbody>
+                                            <tr>
+                                                <th width="15%">Estimation ID</th>
+                                                <td width="30%">JPE160010401</td>
+                                                <th width="15%">Date of Issue</th>
+                                                <td width="40%" colspan="5">
+                                                    2015/12/12
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Client Name</th>
+                                                <td>Google Corporation</td>
+                                                <th>Country</th>
+                                                <td>USA
+                                                </td>
+                                                <th>Attach Logo</th>
+                                                <td class="text-center"><input checked type="checkbox" name=""></td>
+                                                <th>Attach Seal</th>
+                                                <td class="text-center"><input type="checkbox" name=""></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Estimation Amount</th>
+                                                <td>
+                                                    USD 32,433,234
+                                                </td>
+                                                <th>Sales In Charge</th>
+                                                <td colspan="5">
+                                                    Sivashanmugam Kannan
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        
+                        <!-- Basic datatable -->
+                        <!--Company -data -->
+                        <div class="panel panel-flat">
+                            <div class="panel-heading">
+                                <h6 class="panel-title"><i class="fa fa-minus position-left"></i>Project Data</h6>
+                            </div>
+                            <div class="toggle-content" >
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-common" id="widget">
+                                        <tbody>
+                                            <tr>
+                                                <th width="15%">Project Name</th>
+                                                <td width="30%" colspan="3">Project Fi</td>
+                                                <th width="15%">Contract Type</th>
+                                                <th class="hidden" width="15%">heeldsf</th>
+                                                <td width="40%" >
+                                                    <img src="admin.jpg" class="img-circle" alt="user image">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Work Duration</th>
+                                                
+                                                <td class="b-r-0">2016/12/15</td>
+                                                <td class="b-l-0 b-r-0">~</td>
+                                                <td class="b-l-0 text-right">2016/12/29</td>
+                                                <th>Payment Terms</th>
+                                                <td>INDIA
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Estimation Validity</th>
+                                                <td colspan="3">
+                                                    2015/12/31
+                                                </td>
+                                                <th>Others</th>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                       <div class="content">
+                        <div class="panel panel-flat panel-light">
+                            <div class="panel-heading">
+                                <h6 class="panel-title"><i class="fa fa-minus position-left"></i>Work Data</h6>
+                            </div>
+                            <div class="toggle-content">
+                                <div class="table-responsive">
+                                    <table class="table  table-bordered  table-hover table-default">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th  class="text-center" width="45%">Particular</th>
+                                            <th class="text-center" colspan="2" width="20%">Vol</th>
+                                            <th class="text-center" width="15%">Rate</th>
+                                            <th class="text-center" width="20%">Amount</th>
+                                        </tr>
+                                    </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td>1</td>
+                                            <td>Data 1</td>
+                                            <td class="text-right">2,123.33</td>
+                                            <td class="text-right">MM</td>
+                                            <td class="text-right">32,343.32</td>
+                                            <td class="text-right">32,243,221.32</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Management cost [ 10.00 % ]</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="text-right">3,243,221.32</td>
+                                            </tr>
+                                            <tr>
+                                            <td>3</td>
+                                            <td>Data 3</td>
+                                            <td class="text-right">2,123.33</td>
+                                            <td class="text-right">MM</td>
+                                            <td class="text-right">32,343.32</td>
+                                            <td class="text-right">32,243,221.32</td>
+                                            </tr>
+                                            <tr>
+                                            <td>4</td>
+                                            <td>Data 4</td>
+                                            <td class="text-right">2,123.33</td>
+                                            <td class="text-right">MM</td>
+                                            <td class="text-right">32,343.32</td>
+                                            <td class="text-right">32,243,221.32</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    <table class="table table-common">
+                                    <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td width="45%"></td>
+                                                <td width="20.6%"></td>
+                                                <th width="14.7%" class="b-l-0">Sub total</th>
+                                                <td width="20%" class="text-right">32,243,221.32</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td ></td>
+                                                <td ></td>
+                                                <th  class="b-l-0"><span class="m-r-5">Tax</span><span >[ 12.00 % ]</span></th>
+                                                <td  class="text-right">32,243,221.32</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td ></td>
+                                                <td ></td>
+                                                <th  class="b-l-0">Total</th>
+                                                <td  class="text-right">USD 32,243,221.32</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+
+                                
+
+                                
+                            </div>
+
+
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table-default  table table-bordered">
+                            <tbody>
+                                <tr>
+                                   <td>1.Shadow resources will be provided</td> 
+                                </tr>
+                                <tr>
+                                    
+                                   <td>2.Testing resources will be added</td> 
+                                </tr>
+                                <tr>
+                                    
+                                   <td>3.Design resources will be provided</td> 
+                                </tr>
+                                <tr>
+                                    
+                                   <td>4.Softwares will be provided</td> 
+                                </tr>
+                                <tr>
+                                    
+                                   <td>5.Additional resrouces will be given</td> 
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+
+                        
+                        <ul  class="list-inline text-right btn-li m-t-20"> 
+                                <li><button class="btn btn-dark" type="button">EDIT</button></li>
+                                <li><button class="btn btn-dark" type="button">SAVE</button></li>
+                                <li><button class="btn btn-dark" type="button">CANCEL</button></li>
+                                <li><button class="btn btn-dark" type="button">PDF</button></li>
+                            </ul>
+                        
+                        
+                    </div>
+                    
+            
+                </div>
+            </div>
+            <button id="btnSave">image</button> 
+        <div id="img-out"></div>    
+        </div>
+
+        </body>
+        <script type="text/javascript" src="js/common_custom_ui.js"></script>
+        <footer>
+            <p>2016 &COPY; Indo-Sakura EnterpriseConnect</p>
+        </footer>
+       
+            
+</html>
