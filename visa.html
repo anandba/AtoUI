@@ -1,0 +1,2708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Visa Checker</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Custom style -->
+  <link rel="stylesheet" href="dist/css/custom.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/skins/skin-black.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" sizes="32x32" href="dist/img/logo.png" type="image/x-icon" />
+  <style>
+  .picContainer {position:relative;}
+.pic2 {position:absolute; top:0px; left:25%;}
+.visa-panel {
+    margin-top: 20%;
+}
+body {
+ background-image: url("dist/img/pattern.png");
+ background-color: #cccccc;
+}
+.visa-panel {
+	margin-top: 20%;
+}
+
+body {
+ background-image: url("dist/img/pattern.png");
+ background-color: #cccccc;
+}
+
+ 
+.visa-tab {
+	display: none;
+}
+
+.alert {
+	display: none;
+}
+
+#last-panel {
+	display: none;
+}
+
+.fontSize {
+	font-size: 15px;
+}
+
+.panel-btn {
+	background: #4793C0;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.panel-btn:hover {
+	background: #4793C0;
+	color: white;
+}
+
+.bk-btn {
+	background: #FFF2CC;
+	color: black;
+	border: none;
+	margin-top: none;
+}
+
+i {
+	color: white;
+}
+
+i:hover {
+	color: white;
+}
+</style>
+</head>
+
+
+<body>
+	<!-- /.navbar -->
+	<div class="navbar navbar-default navbar-fixed-top basic-header">
+		<a href="https://www.tokhimo.com/candidates" target="_blank">  <img src="dist/img/logo.png" alt="logo"/>
+			<label class="name">Tokhimo Jobs </label>
+		</a>
+	</div>
+	<!-- /.container -->
+	<div class="container text-center ">
+		<br>
+		<div class="row text-center rounded-circle">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 text-center">
+				 <div class="panel panel panel-default text-center" style="border-radius: 50px;margin-top:80px;max-height:100%;background-image: url('dist/img/visa_globe_3.png'); background-repeat: repeat;background-size: 100% auto;border: 2px solid black;">
+					<div class="panel-body">
+						<div class="alert alert-danger ">Please select an option</div>
+						<form role="form">
+							<div class="row">
+								<div class="col-md-12">
+									 <img class="pull-right" src="dist/img/Tokhimo_Logo_Final-2.ico" width="64" height="64" alt="logo" />
+								</div>
+							</div>
+							<fieldset id="start-tab">
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-body">
+												<font size="+3"><strong> <b>Welcome to the Japan work visa checker!</b></strong><br></font> 
+														<div class="text-left"><font size="+1"><strong>
+															<br> This is a simple tool that guides people who
+															are interested in working in Japan,with which visa they
+															may be applicable for. <br> <br> There are many
+															different Visa categories and depending on which one you
+															obtain, certain factors differ such as:<br> -Type of
+															job you can do<br> -Period of stay<br>
+															-Possibility of bringing along spouse/children<br>
+															<br> Try going through the questions and see what
+															opportunities wait for you!
+														</strong></font></div>
+												<br>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-3"></div>
+									<div class="col-md-6 text-center">
+										<label id="start-btn"
+											class="btn btn-primary btn-block panel-btn">Start </label>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab" id="work-type-tab">
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-body">
+														<div class="text-left">
+												<font size="+2"><strong>
+														How would you like to work in
+															Japan?</strong></font></div>
+														<div class="form-group">
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="worktype" value="part-time"
+																	style="margin-top: 10px;">Part-time
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="worktype" value="full-time"
+																	style="margin-top: 10px;">Full-time
+																</label>
+															</div>
+														</div> <br> <br> <br>
+											</div>
+
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-3"></div>
+									<div class="col-md-3 text-center">
+										<label id="typeback"
+											class="btn btn-primary btn-block panel-btn">Back </label>
+									</div>
+									<div class="col-md-3 text-center">
+										<label id="typeNext"
+											class="btn btn-primary btn-block panel-btn">Next</label>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab" id="part-time-tab">
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">
+													<font size="+2"><strong>Previous answer:
+															Part-time</strong></font>
+												</h3>
+											</div>
+											<div class="panel-body">
+														<div class="text-left">
+												<font size="+2"><strong>
+															Part-time working in Japan for non-permanant residents is
+															limited to the following.<br>
+															<br>Do you apply to any of the below?<br>
+														</strong></font></div>
+														<div class="form-group">
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	value="first" name="part-time"
+																	style="margin-top: 10px;">Student interested in
+																	studying in Japan
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	value="second" name="part-time"
+																	style="margin-top: 10px;">College student
+																	interested in an internship in Japan
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	value="third" name="part-time"
+																	style="margin-top: 10px;"> Interested in
+																	visiting Japan with a Working Holiday
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	value="fourth" name="part-time"
+																	style="margin-top: 10px;">Spouse or Child of a
+																	Japanese visa holder
+																</label>
+															</div>
+														</div> <br> <br>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-3"></div>
+									<div class="col-md-3 text-center">
+										<label id="partback"
+											class="btn btn-primary btn-block panel-btn">Back</label>
+									</div>
+									<div class="col-md-3 text-center">
+										<label id="partnext"
+											class="btn btn-primary btn-block panel-btn">Next</label>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="student-visa-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px;  background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b> Your Result is .....</b></font><br> <br>
+											<font size="+3" style="color:#4793C0;"><b>	Visa Category - Student</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities to receive education at a university,
+																college of technology, senior high school, special
+																training school, vocational school, etc in Japan. In
+																general, working is prohibited. However, students who
+																submit the "Permission to Engage in Activity Other than
+																that Permitted by the Status of Residence Previously
+																Granted" are allowed to work part-time with a maximum of
+																28 hours per week in mostly any area.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Permission to Engage in Activity Other than that
+																Permitted by the Status of Residence Previously Granted.
+															</td>
+														</tr>
+														<tr>
+															<td>Period of Stay</td>
+															<td>4 years and 3 months, 4 years, 3 years and 3
+																months, 3 years, 2 years and 3 months, 2 years , 1 year,
+																6 months or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Depends on financial status</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize"
+								id="designated-activities-visa-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br>
+												<font size="+3" style="color:#4793C0;"><b> Visa Category - Designated Activities</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities which are specifically designated by
+																the Minister of Justice for foreign individuals such as,
+																internship, working holiday, domestic staff of a
+																diplomat, foreign nurse / care worker candidate under an
+																Economic Partnership Agreement, etc.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>For Working holiday -One must be from a country
+																that is enlisted in the working holiday countries
+																between Japan. -One must be between the age of 18-30
+																depending on the country you are from. <br> For
+																Internship -One must be a college student, and there
+																must be a contract between the Japanese employer and
+																college to agree that the work experience will provide
+																school credits.
+															</td>
+														</tr>
+														<tr>
+															<td>Period of Stay</td>
+															<td>For Working holiday -6 months to 1 year
+																depending on country <br> For Internship -1 year at
+																max
+															</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Not Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="dependent-visa-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is ..... </b></font><br> <br>
+												<font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Dependent</b></font>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>This visa is for a spouse, or child of a person
+																who is staying in Japan with a visa that allows
+																dependents. <br> In general, working is prohibited.
+																However, dependents who submit the "Permission to Engage
+																in Activity Other than that Permitted by the Status of
+																Residence Previously Granted" are allowed to work
+																part-time with a maximum of 28 hours per week in mostly
+																any area.
+															</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Permission to Engage in Activity Other than that
+																Permitted by the Status of Residence Previously Granted.
+															</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 4 years and 3 months, 4 years, 3 years
+																and 3 months, 3 years, 2 years and 3 months, 2 years, 1
+																year and 3 months, 1 year, 6 months or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Not Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab" id="full-time-tab">
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">
+													<font size="+2"><strong>Previous answer:
+															Full-time</strong></font>
+												</h3>
+
+											</div>
+											<div class="panel-body">
+
+														<div class="text-left">
+												<font size="+2"><strong>
+															What is your current occupation?</strong></font> <br>
+														</div>
+														<div class="form-group">
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="full-time" value="first"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Student
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="full-time" value="second"
+																	style="margin-top: 10px;">&nbsp;&nbsp;General
+																	Employee
+																</label>
+															</div>
+															<br>
+															<div class="form-check-input radio">
+																<label class="pull-left"> <input type="radio"
+																	name="full-time" value="third"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Employee
+																	in any of the following areas
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="text-left"> -Diplomat<br>
+																	-Government Official <br> -Professor <br>
+																	-Artist <br> -Religious Activities<br>
+																	-Journalist<br> -Company president or director<br>
+																	-Legal/Accounting Services<br> -Medical Services <br>
+																	-Researcher <br> -Instructor <br>
+																	-Entertainer <br> -Skilled Labor such as Chef of
+																	foreign cuisine, sports instructor, aircraft pilot, or
+																	craftsman <br> <br>
+
+																</label>
+															</div>
+														</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-3"></div>
+									<div class="col-md-3 text-center">
+										<label id="fullback"
+											class="btn btn-primary btn-block panel-btn">Back</label>
+									</div>
+									<div class="col-md-3 text-center">
+										<label id="fullnext"
+											class="btn btn-primary btn-block panel-btn">Next</label>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab" id="student-tab">
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title visa-tab" id="first-title">
+													<font size="+2"><strong>Previous answer:
+															Student</strong></font>
+												</h3>
+												<h3 class="panel-title visa-tab" id="second-title">
+													<font size="+2"><strong>Previous answer: :
+															None of the above </strong></font>
+												</h3>
+
+											</div>
+											<div class="panel-body">
+														<div class="text-left">
+												<font size="+2"><strong>
+														What is or is planned to be
+															your final degree of education?</strong></font></div>
+														<div class="form-group">
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="degree" value="first" style="margin-top: 10px;">Bachelor
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="degree" value="second" style="margin-top: 10px;">Masters
+																	or Doctor
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="degree" value="third" style="margin-top: 10px;">High
+																	school / Vocational / Skills
+																</label>
+															</div>
+														</div> <br> <br> <br>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-3"></div>
+									<div class="col-md-3 text-center">
+										<label id="stud-back"
+											class="btn btn-primary btn-block panel-btn visa-tab">Back</label>
+										<label id="employee-back"
+											class="btn btn-primary  panel-btn visa-tab">Back</label>
+									</div>
+									<div class="col-md-3 text-center">
+										<label id="stud-next"
+											class="btn btn-primary btn-block panel-btn">Next</label>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab" id="major-tab">
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title visa-tab" id="bachelor">
+													<font size="+2"><strong>Previous answer:
+															Bachelor</strong></font>
+												</h3>
+												<h3 class="panel-title visa-tab" id="n3-level">
+													<font size="+2"><strong>Previous answer: N3
+															- N5 level </strong></font>
+												</h3>
+												<h3 class="panel-title visa-tab" id="none-optn">
+													<font size="+2"><strong>Previous answer:
+															None</strong></font>
+												</h3>
+
+											</div>
+											<div class="panel-body">
+														<div class="text-left">
+												<font size="+2"><strong>
+														What is your major?</strong></font></div>
+														<div class="form-group">
+															<table id="userList" class="table  text-left ">
+																<tbody>
+																	<tr>
+																		<td rowspan="5"
+																			style="vertical-align: middle; text-align: center; border: solid thin;">
+																			<div class="radio">
+																				<label class="pull-left"> <input
+																					type="radio" name="major" value="first"
+																					style="margin-top: 10px;">
+																				</label>
+																			</div>
+																		</td>
+																		<td rowspan="5"
+																			style="vertical-align: middle; text-align: center; border: solid thin;">
+																			Arts, Humanities</td>
+																		<td style="border: solid thin;">Culture</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">History</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Language,
+																			Literature, Linguistics</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Japanese Studies
+																			in Arts, Humanities Category</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Other Arts,
+																			Humanities Studies</td>
+																	</tr>
+																	<!--Second Row -->
+																	<tr>
+																		<td rowspan="7"
+																			style="vertical-align: middle; text-align: center; border: solid thin;">
+																			<div class="radio">
+																				<label class="pull-left"> <input
+																					type="radio" name="major" value="second"
+																					style="margin-top: 10px; border: solid thin;">
+																				</label>
+																			</div>
+																		</td>
+																		<td rowspan="7"
+																			style="vertical-align: middle; text-align: center; border: solid thin;">
+																			Engineering, Technology</td>
+																		<td style="border: solid thin;">Engineering,
+																			Technology</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Chemical
+																			Engineering</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Civil, Structural
+																			Engineering</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Computer Science,
+																			Information Systems</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Electrical,
+																			Electronic Engineering</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Mechanical,
+																			Aeronautical, Manufacturing Engineering</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Other
+																			Engineering, Technology Studies</td>
+																	</tr>
+																	<!--Third Row -->
+																	<tr>
+																		<td rowspan="7"
+																			style="vertical-align: middle; text-align: center; border: solid thin;">
+																			<div class="radio">
+																				<label class="pull-left"> <input
+																					type="radio" name="major" value="third"
+																					style="margin-top: 10px; border: solid thin;">
+																				</label>
+																			</div>
+																		</td>
+																		<td rowspan="7"
+																			style="vertical-align: middle; text-align: center; border: solid thin;">
+																			Life Sciences, Medicine</td>
+																		<td style="border: solid thin;">Agriculture ,
+																			Forestry</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Biological
+																			Sciences</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Medicine</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Medical Studies</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Phamacy,
+																			Pharmacology</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Psychology</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Other Life
+																			Sciences Studies</td>
+																	</tr>
+																	<!--Fourth Row -->
+																	<tr>
+																		<td rowspan="8"
+																			style="vertical-align: middle; text-align: center; border: solid thin;">
+																			<div class="radio">
+																				<label class="pull-left"> <input
+																					type="radio" name="major" value="fourth"
+																					style="margin-top: 10px; border: solid thin;">
+																				</label>
+																			</div>
+																		</td>
+																		<td rowspan="8"
+																			style="vertical-align: middle; text-align: center; border: solid thin;">
+																			Natural Sciences</td>
+																		<td style="border: solid thin;">Chemistry</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Earth, Marine
+																			Sciences</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Environmental
+																			Sciences</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Geography</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Materials
+																			Sciences</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Mathematics,
+																			Statistics</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Mathematics,
+																			Statistics</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Other Natural
+																			Sciences Studies</td>
+																	</tr>
+																	<!--Fifth Row -->
+																	<tr>
+																		<td rowspan="11"
+																			style="vertical-align: middle; text-align: center; border: solid thin;">
+																			<div class="radio">
+																				<label class="pull-left"> <input
+																					type="radio" name="major" value="fifth"
+																					style="margin-top: 10px; border: solid thin;">
+																				</label>
+																			</div>
+																		</td>
+																		<td rowspan="11"
+																			style="vertical-align: middle; text-align: center; border: solid thin;">
+																			Social Sciences</td>
+																		<td style="border: solid thin;">Accounting,
+																			Finance</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Business,
+																			Management</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Communication,
+																			Media Studies</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Economics,
+																			Econometrics, Commerce</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Education</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Law</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Politics,
+																			International Studies</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Psychology</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Sociology</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Statistics,
+																			Operational Research</td>
+																	</tr>
+																	<tr>
+																		<td style="border: solid thin;">Other Social
+																			Sciences Studies</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+											</div>
+											<div class="col-md-1"></div>
+										</div>
+										<div class="row text-center">
+											<div class="col-md-3"></div>
+											<div class="col-md-3 text-center">
+												<label id="major-back"
+													class="btn btn-primary  panel-btn visa-tab">Back</label> <label
+													id="master-major-back"
+													class="btn btn-primary btn-block panel-btn visa-tab">Back</label>
+											</div>
+											<div class="col-md-3 text-center">
+												<label id="major-next"
+													class="btn btn-primary btn-block panel-btn">Next</label>
+											</div>
+											<div class="col-md-3"></div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="specialist-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body text-center">
+
+												<font size="+3"><b> Your Result is .....</b></font><br><br>
+												<font size="+1"><strong><b> "Engineer/Specialist in Humanities/International Services"</b></strong></font> <br> 
+												<font size="+3" style="color:#4793C0;"><b>	Visa Category - Specialist in Humanities</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities engaged in business requiring
+																knowledge belonging to the fields of law, economics,
+																sociology and other humanities Activities in the area of
+																"Specialist in Humanities" need to be "activities
+																requiring expert knowledge beyond a certain level on the
+																background of academic sophistication". Work utilizes
+																so-called university-level expertise applies.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>One must be qualified in one of the below<br>
+																-University graduation with relevant major<br>
+																-Completed the special course of vocational school in
+																Japan<br> -10 years or more of relevant work
+																experience<br> -Information processing technology
+																qualification<br>
+															</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="engineer-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body text-center">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <br>
+													<font size="+1"><strong><b> "Engineer/Specialist in Humanities/International Services"</b></strong></font> <br> 
+													<font size="+3" style="color:#4793C0;"><b>Visa Category - Engineer</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities engaged in work that requires skills
+																or knowledge belonging to the fields of science,
+																engineering and other natural sciences. Activities in
+																the area of "Engineer" need to be "activities requiring
+																specialized skills or knowledge beyond a certain level
+																on the background of academic sophistication". Work that
+																utilizes so-called university-level expertise applies.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>One must be qualified in one of the below<br>
+																-University graduation with relevant major<br>
+																-Completed the special course of vocational school in
+																Japan<br> -10 years or more of relevant work
+																experience<br> -Information processing technology
+																qualification<br>
+															</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab" id="master-tab">
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">
+													<font size="+2"><strong>Previous answer:
+															Masters or Doctors </strong></font>
+												</h3>
+
+											</div>
+											<div class="panel-body">
+														<div class="text-left">
+												<font size="+2"><strong>
+														What is your Japanese level?
+															(in terms of JLPT)</strong></font></div>
+														<div class="form-group">
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="jp-level" value="first" style="margin-top: 10px;">N1
+																	- N2 level
+
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="jp-level" value="second"
+																	style="margin-top: 10px;">N3 - N5 level
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="jp-level" value="third" style="margin-top: 10px;">None
+																</label>
+															</div>
+														</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-3"></div>
+									<div class="col-md-3 text-center">
+										<label id="master-back"
+											class="btn btn-primary btn-block panel-btn">Back</label>
+									</div>
+									<div class="col-md-3 text-center">
+										<label id="master-next"
+											class="btn btn-primary btn-block panel-btn">Next</label>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="professional-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> 
+												<font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Highly-Skilled Professional</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities which come under any of the following
+																(a) to (c) to be conducted by foreign nationals who meet
+																the criteria provided for by an ordinance of the
+																Ministry of Justice as human resources who possess
+																advanced and specialized skills, and who are expected to
+																contribute to the academic research and economic
+																development of Japan.<br> (a) Activities of
+																engaging in research, research guidance or education.<br>
+																(b) Activities of engaging in work requiring specialized
+																knowledge or skills in the field of natural sciences or
+																humanities.<br> (c) Activities of operating
+																international trade or some other business.<br>
+															</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Highly-Skilled human resources in accordance
+																with the points' system, which is calculated by factors
+																such as, educational background, work experience,
+																salary, age, Japanese level, etc.</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years initially, and can change to an
+																indefinite visa after a certain period depending on your
+																score points.</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab" id="highschool-tab">
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">
+													<font size="+2"><strong>Previous answer:
+															High school / Vocational / Skills </strong></font>
+												</h3>
+
+											</div>
+											<div class="panel-body">
+														<div class="text-left">
+												<font size="+2"><strong>
+														Are you majoring in any of
+															the below fields?</strong></font></div>
+														<div class="form-group">
+															<div class="radio">
+																<label class="pull-left text-left"> -Agriculture
+																	<br>-Fisheries<br> -Construction<br>
+																	-Food and beverages manufacturing<br>
+																	-Apprael/Furniture Manufacturing<br>
+																	-Metal/Machine Processing <br> -Material
+																	Processing<br> -Automobile Maitanance <br>
+																	-Building Cleaning<br>-Nursing care<br>
+																	-Hotel Operations<br> -Airport Operations
+																</label>
+															</div>
+															<br> <br> <br> <br> <br> <br>
+															<br> <br> <br> <br> <br> <br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="school" value="first" style="margin-top: 10px;">Yes
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="school" value="second" style="margin-top: 10px;">No
+																</label>
+															</div>
+														</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-3"></div>
+									<div class="col-md-3 text-center">
+										<label id="school-back"
+											class="btn btn-primary btn-block panel-btn">Back</label>
+									</div>
+									<div class="col-md-3 text-center">
+										<label id="school-next"
+											class="btn btn-primary btn-block panel-btn">Next</label>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab" id="jp-level-tab">
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">
+													<font size="+2"><strong>Previous answer:
+															Yes </strong></font>
+												</h3>
+											</div>
+											<div class="panel-body">
+														<div class="text-left">
+												<font size="+2"><strong>
+														What is your Japanese level?
+															(in JLPT terms)</strong></font></div>
+														<div class="form-group">
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="jp" value="second" style="margin-top: 10px;">N4
+																	or above
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="jp" value="first" style="margin-top: 10px;">None
+																</label>
+															</div>
+														</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-3"></div>
+									<div class="col-md-3 text-center">
+										<label id="jp-back"
+											class="btn btn-primary btn-block panel-btn">Back</label>
+									</div>
+									<div class="col-md-3 text-center">
+										<label id="jp-next"
+											class="btn btn-primary btn-block panel-btn">Next</label>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="worker-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Specified Skilled Worker</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Fields in which specified skilled foreign
+																workers can be accepted are industrial fields (the
+																specified industrial fields) that need to recruit the
+																foreign nationals to make up for labor shortages despite
+																the efforts made to raise productivity and to recruit
+																domestic human resources. Possible activities will
+																differ depending on the categories shown below that one
+																enroles into. <br> -Nursing care<br> -Building
+																cleaning<br> -Material Processing<br>
+																-Industrial machinery manufacturing<br> -Electric
+																and electronic information related<br>
+																-Construction<br> -Shipbuilding and ship-related<br>
+																-Automobile maintenance<br> -Hotel Operations<br>
+																-Airport Operations<br> -Agriculture<br>
+																-Fisheries<br> -Food and beverages manufacturing<br>
+																-Food service<br>
+															</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Technical skill qualification: confirmation by a
+																category specific exam (Those who have completed
+																technical intern training in the same category are
+																exempt from the exam) <br>Japanese language
+																qualification: Confirmation by a Japanese language exam.<br>
+																(JLPT N4 holders, or those who have completed technical
+																intern training are exempt from the exam)
+															</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>Up to 5 years in total with renewals every 1
+																year, 6 months, or 4 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Not Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="intern-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Technical Intern Trainee Program</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>The objectives and purpose of the Technical
+																Intern Training Program are to transfer skills,
+																technologies, or knowledge, accumulated in Japan to
+																developing and other regions and to promote
+																international cooperation by contributing to the
+																development of human resources who can play roles in the
+																economic development of those developing regions.
+																Applicants will be recieving a normal Japan based salary
+																during this training.<br> Possible activities will
+																differ depending on the categories shown below that one
+																enroles into. <br> -Agriculture<br> -Fisheries<br>
+																-Construction<br> -Food and beverages manufacturing<br>
+																-Apprael/Furniture Manufacturing<br> -Metal/Machine
+																Processing<br> -Material Processing<br>
+																-Automobile Maitanance<br> -Building Cleaning<br>
+																-Nursing care<br> -Hotel Operations<br>
+																-Airport Operations<br>
+															</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>The country you are from must be enlisted in the
+																list of countries that are participating in the
+																Technical Intern Training Program with Japan. <br>
+																One must have either work or educational experience in
+																any of the above categories. The duration of experience
+																differs depending on the category.<br> One must be
+																trained in Japanese language and culture through a
+																registered "Sending Organization" in your contry, prior
+																to starting the program.<br>
+															</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>Starting off with 1 year, but can extend to 3 to
+																max 5 years depending on<br> 1. The organization
+																one belongs to <br> 2. The mid-term test to pass
+																the extention screening<br>
+															</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Not Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="none-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+
+											<div class="panel-body">
+												<font size="+2"><strong>Unfortunately, there
+														may be no full-time working visa that fits you.<br>
+														Try looking into the "Technical Intern Training Program"
+														Visa or "Specified Skilled Worker" Visa to see what you
+														can do to become qualified. </strong></font>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab" id="employee-tab">
+								<div class="row">
+									<div class="row text-center">
+										<div class="col-md-1"></div>
+										<div class="col-md-10">
+											<div class="panel panel panel-default"
+												style="background: white; opacity: 0.8;">
+												<div class="panel-heading" style="min-height: 50px;">
+													<h3 class="panel-title">
+														<font size="+2"><strong>Previous answer:
+																General Employee</strong></font>
+													</h3>
+
+												</div>
+												<div class="panel-body">
+
+															<div class="text-left">
+													<font size="+2"><strong>
+																Do you have any of the following work experience? </strong></font><br>
+															</div>
+															<div class="form-group">
+																<div class="radio">
+																	<label class="text-left"> <input type="radio"
+																		name="experience" value="first"
+																		style="margin-top: 10px;">&nbsp;&nbsp;10 or
+																		more years of experience as an Engineer (Can include
+																		educational experience)
+																	</label>
+																</div>
+																<div class="radio">
+																	<label class="text-left"> <input type="radio"
+																		name="experience" value="second"
+																		style="margin-top: 10px;">&nbsp;&nbsp;10 or
+																		more years of experience in a specific business side
+																		role such as(Can include educational experience)
+																	</label> <label class="pull-left text-left">-sales <br>-marketing
+																		<br>-planning<br>-finance/Accounting
+																	</label>
+																</div>
+
+																<div class="radio">
+																	<label class="pull-left text-left"> <input
+																		type="radio" name="experience" value="third"
+																		style="margin-top: 10px;">&nbsp;&nbsp;3 or
+																		more years of work experience in any of the following
+																		International jobs.
+																	</label>
+																</div>
+																<div class="radio">
+																	<label class="pull-left text-left">
+																		-Translation/Interpretation in Japanese <br>-Language
+																		Teacher <br> -Overseas Trading/Operations<br>
+																		-PR/Marketing<br> -Product development
+
+																	</label>
+																</div>
+																<br>
+																<div class="radio">
+																	<label class="pull-left text-left"> <input
+																		type="radio" name="experience" value="fourth"
+																		style="margin-top: 10px;">&nbsp;&nbsp;None of
+																		the Above
+																	</label>
+																</div>
+															</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row text-center">
+										<div class="col-md-3"></div>
+										<div class="col-md-3 text-center">
+											<label id="exp-back"
+												class="btn btn-primary btn-block panel-btn">Back </label>
+										</div>
+										<div class="col-md-3 text-center">
+											<label id="exp-next"
+												class="btn btn-primary btn-block panel-btn">Next</label>
+										</div>
+										<div class="col-md-3"></div>
+									</div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="international-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body text-center">
+
+												<font size="+3"><b>Your Result is .....</b></font><br><br>  
+												<font size="+1"><strong><b>	"Engineer/Specialist in Humanities/International Services"</b></strong></font> <br> 
+												<font size="+3" style="color:#4793C0;"><b>	Visa Category - International Services</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities engaged in work requiring thought or
+																susceptibility based on foreign culture. The activities
+																in the area of "International Services" need to be
+																"activities that require more than a certain level of
+																professional abilities based on thought or
+																susceptibility based on foreign cultures" acquired in a
+																traditional culture of a foreign country,
+																Interpretation, guidance of language, publicity,
+																advertisement or overseas trading business, design
+																related to clothing or interior decoration, product
+																development and other similar activities are applicable.
+															</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>One must be qualified in one of the below<br>
+																-University graduation with relevant major<br> -3
+																years or more of work experience related to work engaged
+																in engagement<br>
+															</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab" id="occupation-tab">
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">
+													<font size="+2"><strong>Previous answer:
+															Employee in any of the following areas</strong> </font>
+												</h3>
+
+											</div>
+											<div class="panel-body">
+
+														<div class="text-left">
+												<font size="+2"><strong>
+															Which is your current occupation?</strong></font> <br>
+														</div>
+														<div class="form-group">
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="one" style="margin-top: 10px;">&nbsp;&nbsp;Diplomat
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="two" style="margin-top: 10px;">&nbsp;&nbsp;Legal/Accounting
+																	Services
+																</label>
+															</div>
+															<br>
+															<div class="form-check-input radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="three"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Government
+																	Official
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="four"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Medical
+																	Services
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="five"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Professor
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="six" style="margin-top: 10px;">&nbsp;&nbsp;Researcher
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="seven"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Artist
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="eight"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Instructor
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="nine"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Religious
+																	Activities
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="ten" style="margin-top: 10px;">&nbsp;&nbsp;Entertainer
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="eleven"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Journalist
+																</label>
+															</div>
+															<br>
+															<div class="radio">
+																<label class="text-left"> <input type="radio"
+																	name="occupation" value="twelve"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Skilled
+																	Labor such as Chef of foreign cuisine, sports
+																	instructor, aircraft pilot, or craftsman
+																</label>
+															</div>
+															<div class="radio">
+																<label class="pull-left"> <input type="radio"
+																	name="occupation" value="thirteen"
+																	style="margin-top: 10px;">&nbsp;&nbsp;Company
+																	president or director
+																</label>
+															</div>
+														</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<div class="row text-center">
+									<div class="col-md-3"></div>
+									<div class="col-md-3 text-center">
+										<label id="occupation-back"
+											class="btn btn-primary btn-block panel-btn">Back</label>
+									</div>
+									<div class="col-md-3 text-center">
+										<label id="occupation-next"
+											class="btn btn-primary btn-block panel-btn">Next</label>
+									</div>
+									<div class="col-md-3"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="diploma-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Diplomat</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities on the part of constituent members of
+																diplomatic missions or consular offices of foreign
+																governments hosted by the Government of Japan,
+																activities on the part of those who are provided with
+																similar privileges and/or immunities as are given to
+																diplomatic missions in accordance with treaties or
+																international customary practices, and the activities on
+																the part of their family members belonging to the same
+																household.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Ambassador, minister, consulate general, or
+																delegation member of a foreign government and their
+																families</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>Foreign nationals who receive the Status of
+																Residence of “Diplomat” are permitted to stay in Japan
+																for the length of their stated mission.</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="government-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Government official</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities on the part of those who engage in
+																the official business of foreign governments or
+																international organizations recognized by the Japanese
+																Government; and activities on the part of their family
+																members belonging to the same household.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Employee of an embassy or consulate of a foreign
+																government, individual assigned by an international
+																institution for an official assignment, and their
+																families</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year, 3 months, 30 days or
+																15 days</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="professor-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Professor</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities for research, guidance of research or
+																education at a college, an equivalent educational
+																institutions or a college of technology
+																(kotosenmongakko).</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>- A Professor, assistant Professor at a
+																university<br> - A Researcher at a higher education
+																organization etc.
+															</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="artist-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Artist</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities for the arts that provide income,
+																including music, the fine arts, literature, etc.(except
+																for the activities that will be in the "Entertainer"
+																Visa).</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>A Composer, artist, or writer</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="relligious-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Religious Activities</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Missionary and other religious activities
+																conducted by foreign religious workers dispatched by
+																foreign religious organizations.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Missionary assigned by a foreign religious
+																organization</td>
+														</tr>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="journalist-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+											<font size="+3"><b>	Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Journalist</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>News coverage and other journalistic activities
+																conducted based on a contract with foreign journalistic
+																organizations.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Reporter or photographer of foreign press</td>
+														</tr>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="president-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Business Manager</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities of operating international trade or
+																some other business of a public or private organization
+																in Japan or of managing such business.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Manager or administrator of a company, etc.<br>
+																Must have at least 3 years' experience (including the
+																period of majoring in management or management courses
+																at graduate school) on business management or management
+																of business.<br> Your business must have a secured
+																office, business scale with two or more full-time
+																employee + capital of 5 million yen or more, and
+																explanation of business continuity.
+															</td>
+														</tr>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year, 4 months or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="legal-accounting-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Legal/Accounting Services</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities to engage in legal or accounting
+																business, which is required to be carried out by
+																registered foreign lawyers, or certified public
+																accountants or those with other legal qualifications.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Attorney or certified public accountant</td>
+														</tr>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="mediacal-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Medical Services</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities to engage in medical treatment
+																services, which are required to be undertaken by
+																physicians, dentists or those with other legal
+																qualifications.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Physician, dentist or registered nurse</td>
+														</tr>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="researcher-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Researcher</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities to engage in research based on a
+																contract with a public or private organization in Japan.
+															</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Researchers, investigators with one of the below
+																qualifications. <br> - BS degree and 3-year
+																research experience <br> - BS and MS degree etc. <br>
+																This can be substituted by 10-year research experience<br>
+															</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="instructor-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Instructor</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities to engage in language instruction and
+																other education at an elementary school, junior high
+																school, compulsory education school, senior high school,
+																secondary educational school, school for special needs
+																education, vocational school, miscellaneous educational
+																institution, or the other educational institutions
+																equivalent to vocational schools in facilities and
+																curriculum.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Language instructor at a senior high school or
+																junior high school, etc.</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="entertainer-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Entertainer</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities to engage in theatrical performances,
+																dramatic performances, musical performances, sports or
+																any other performing art activities.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Actor, singer, dancer, or professional athlete</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>3 years, 1 year, 6 months, 3 months, or 15 days</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+							<fieldset class="visa-tab fontSize" id="labour-end-tab">
+								<!--First paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="border-radius: 20px; background: white; opacity: 0.8;">
+											<div class="panel-body">
+
+												<font size="+3"><b>Your Result is .....</b></font><br> <br> <font size="+3" style="color:#4793C0;"><b> Visa
+													Category - Skilled Labor</b></font>
+
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!--Second paneel -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">
+										<div class="panel panel panel-default"
+											style="background: white; opacity: 0.8;">
+											<div class="panel-heading" style="min-height: 50px;">
+												<h3 class="panel-title">About the visa</h3>
+
+											</div>
+											<div class="panel-body">
+												<table id="userList" class="table  text-left ">
+													<tbody>
+														<tr>
+															<td>Activities that can be carried out</td>
+															<td>Activities to engage in services, which require
+																industrial techniques or skills belonging to special
+																fields based on a contract with public or private
+																organizations in Japan.</td>
+														</tr>
+														<tr>
+															<td>Qualifications (Candidate)</td>
+															<td>Chef of foreign cuisine, sports instructor,
+																aircraft pilot, or craftsman of precious metals</td>
+														<tr>
+															<td>Period of Stay</td>
+															<td>5 years, 3 years, 1 year or 3 months</td>
+														</tr>
+														<tr>
+															<td>Relocation of Spouse / Children</td>
+															<td>Allowed</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+								<!-- Third Row -->
+								<div class="row text-center">
+									<div class="col-md-1"></div>
+									<div class="col-md-10">*This tool is to provide
+										possibilities of work visa application and does not take
+										responsibility in application results</div>
+									<div class="col-md-1"></div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<!-- Last Panel -->
+		<div class="row text-center fontSize" id="last-panel">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="panel panel panel-default"
+					style="border-radius: 50px; background: white; background: #4793C0; color: white;">
+					<div class="panel-body">
+						<div class="row text-center">
+							Would you like to search for Job opportunities in Japan?<br>
+							Visit Tokhimo Jobs and register your profile for free to look for
+							open jobs!
+						</div>
+						<br>
+						<div class="row text-center">
+							<div class="col-md-3"></div>
+							<div class="col-md-2 text-center">
+								<label id="part-back-btn" class="btn bk-btn visa-tab">
+									Back</label> <label id="major-back-btn" class="btn bk-btn visa-tab">
+									Back</label> <label id="master-back-btn" class="btn bk-btn visa-tab">
+									Back</label> <label id="none-back-btn" class="btn bk-btn visa-tab">
+									Back</label> <label id="jp-back-btn" class="btn bk-btn visa-tab">
+									Back</label> <label id="employee-back-btn" class="btn bk-btn visa-tab">
+									Back</label> <label id="occupation-back-btn"
+									class="btn  bk-btn visa-tab"> Back</label>
+
+							</div>
+							<div class="col-md-4 text-center">
+								<a th:href="@{https://www.tokhimo.com/candidates}" target="_blank"
+									style="background: #FFC000; color: black; border: none"
+									class="btn btn-primary btn-block"> Visit Tokhimo Jobs</a>
+							</div>
+							<div class="col-md-3"></div>
+						</div>
+						<br>
+						<div class="row text-center">
+							<b><span style="color: black">Follow our SNS and recieve the latest information about jobs in Japan!</span></b>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-4"></div>
+							<div class="col-md-1">
+								<a target="_blank"
+									href="https://www.facebook.com/Tokhimo-117563023428228"><i
+									class="fa fa-facebook-square fa-3x"></i></a>
+							</div>
+							<div class="col-md-1">
+								<a target="_blank"
+									href="https://www.linkedin.com/company/tokhimo"><i
+									class="fa fa-linkedin-square fa-3x"></i></a>
+							</div>
+							<div class="col-md-1">
+								<a target="_blank" href="https://twitter.com/tokhimo"><i
+									class="fa fa-twitter-square fa-3x"></i></a>
+							</div>
+							<div class="col-md-4"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<!-- /.footer -->
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">&copy; 2020 Tokhimo Inc. All Rights
+				Reserved.</p>
+		</div>
+	</footer>
+	<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+	<script src="visa.js"></script>
+
+</body>
+
+</html>
