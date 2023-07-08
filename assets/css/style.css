@@ -1353,16 +1353,6 @@ section {
   color: #f3301b;
 }
 
-@media (max-width: 575px) {
-
-  #footer .copyright,
-  #footer .credits {
-    float: none;
-    -moz-text-align-last: center;
-    text-align-last: center;
-    padding: 3px 0;
-  }
-}
 
 .h_iframe {
     position:relative;
@@ -1378,4 +1368,23 @@ section {
     left:0;
     width:100%;
     height:100%;
+}
+
+@media (max-width: 575px) {
+
+  #footer .copyright,
+  #footer .credits {
+    float: none;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    padding: 3px 0;
+  }
+  .h_iframe iframe {
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
 }
